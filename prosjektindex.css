@@ -96,6 +96,7 @@ li.dropdown {
   position: relative;
   margin: auto;
 }
+.mySlides {display:none;}
 
 /* Caption text */
 .text {
@@ -250,6 +251,44 @@ div.desc {
     }
 }
 
+.responsive2 {
+    padding: 10px;
+    float: left;
+    width: 20%;
+    margin:auto;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive2 {
+        width: 35%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive2 {
+        width: 100%;
+    }
+}
+.responsive3 {
+    padding: 10px;
+    float: left;
+    width: 20%;
+    margin:auto;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive3 {
+        width: 35%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive3 {
+        width: 100%;
+    }
+}
 .clearfix:after {
     content: "";
     display: table;
@@ -305,25 +344,7 @@ div.desc2 {
 
 }
 
-.responsive2 {
-    padding: 10px;
-    float: left;
-    width: 20%;
-    margin:auto;
-}
 
-@media only screen and (max-width: 700px){
-    .responsive2 {
-        width: 35%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .responsive2 {
-        width: 100%;
-    }
-}
 
 /* The Modal (background) */
 .modal {
@@ -362,4 +383,19 @@ div.desc2 {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+#myBtn ,#myBtn2, #myBtn3, #myBtn4{
+  background-color: lightgrey;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+  border-radius: 12px;
+
 }
