@@ -6,6 +6,12 @@
   margin-bottom: 40px;
 }
 
+
+#logo-container img {
+   width: 100%;
+   height: auto;
+}
+
 footer {
 padding-top: 8px;
 padding-bottom: 4px;
