@@ -245,6 +245,44 @@ div.desc {
     }
 }
 
+.responsive2 {
+    padding: 10px;
+    float: left;
+    width: 20%;
+    margin:auto;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive2 {
+        width: 35%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive2 {
+        width: 100%;
+    }
+}
+.responsive3 {
+    padding: 10px;
+    float: left;
+    width: 20%;
+    margin:auto;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive3 {
+        width: 35%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive3 {
+        width: 100%;
+    }
+}
 .clearfix:after {
     content: "";
     display: table;
@@ -300,25 +338,7 @@ div.desc2 {
 
 }
 
-.responsive2 {
-    padding: 10px;
-    float: left;
-    width: 20%;
-    margin:auto;
-}
 
-@media only screen and (max-width: 700px){
-    .responsive2 {
-        width: 35%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .responsive2 {
-        width: 100%;
-    }
-}
 
 /* The Modal (background) */
 .modal {
