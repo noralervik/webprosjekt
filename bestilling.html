@@ -10,10 +10,8 @@
   <body>
 <div id="logo-container"><a href="bilder/header1.jpg"><img src="bilder/header1.jpg" alt="header" /></a></div>
 
-<form>
-
 <ul>
-  <li><a class="active" href="prosjektindex.html">Hjem</a></li>
+  <li><a class="active" href="bestilling.html">Hjem</a></li>
   <li class="dropdown">
     <a href="#" class="dropbtn">Hytter</a>
     <div class="dropdown-content">
@@ -25,27 +23,30 @@
   <li><a href="bestilling.html">Bestilling</a></li>
   <li style="float:right"><a href="omoss.html">Om oss</a></li>
   <input type="text" name="search" placeholder="Søk på siden.."></i>
-</form>
+
+
 </ul>
+
+<form action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php">
+
 <div class="altunder">
 
 <h1>Bestill hytteopphold</h1>
 <p>Skriv inn informasjon blablablabla</p>
 
 <div id="skjema">
-  <form action="action_page.php">
     <label for="fname">Fornavn</label>
-    <input type="text" id="fname" name="firstname">
+    <input type="text" id="fname" name="firstname" required = "">
 <br>
     <label for="lname">Etternavn</label>
-    <input type="text" id="lname" name="lastname">
+    <input type="text" id="lname" name="lastname" required = "">
 <br>
     <label for="epost">E-post</label>
-      <input type="text" id="epost" name="e-post">
+      <input type="text" id="epost" name="e-post" required = "">
       <br>
       <label for="tlf">Telefonnummer</label>
-        <input type="text" id="tlf" name="telefon">
-</select>
+        <input type="text" id="tlf" name="telefon" required = "">
+</div>
 
 
 <p> Hvor mange skal overnatte?</p>
@@ -64,8 +65,6 @@
         <option value="12">12</option>
       </select>
 <br></br>
-
-      <form action="action_page.php">
         Velg reiselengde:
         <br></br>
         <label for="ankomst">Ankomst:</label>
@@ -81,17 +80,12 @@
 <br>
       <textarea>Eventuelle kommentarer...</textarea>
 
+
     <input type="submit" value="Send inn">
 
-  </form>
-</div>
 
-<form action="demo_form.asp" method="post">
-  <input type="text" name="fname" required>
-  <input type="submit" value="Submit">
+</div>
 </form>
-
-</div>
 <footer>Copyright © HytterForLife
   <p>Har du spørsmål? Send oss en <a href="mailto:regine_bk@example.com">epost!</a><br></p>
 
