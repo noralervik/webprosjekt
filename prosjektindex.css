@@ -90,6 +90,7 @@ li.dropdown {
   position: relative;
   margin: auto;
 }
+.mySlides {display:none;}
 
 /* Caption text */
 .text {
