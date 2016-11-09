@@ -209,9 +209,9 @@ div.img {
 
 }
 
-div.img:hover {
+/*div.img:hover {
     border: 1px solid #777;
-}
+}*/
 
 div.img img {
     width: 100%;
