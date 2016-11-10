@@ -42,10 +42,10 @@
     <input type="text" id="lname" name="lastname" required = "">
 <br>
 <label for="mail">E-post</label>
-  <input type="email" id="lname" name="email"required = "">
+  <input type="text" id="lname" name="email" required = "">
       <br>
       <label for="tlf">Telefonnummer</label>
-        <input type="text" id="tel" name="telefon" pattern="[0-9]{8}" required = "">
+        <input type="text" id="tel" name="telefon" pattern="[0-9]{8}" required = "" >
 </div>
 
 <p> Hvor mange skal overnatte?</p>
@@ -69,7 +69,7 @@
         <label for="ankomst">Ankomst:</label>
         <input type="date" name="Ankomst" min="2017-01-01" max="2020-01-01" required = "">
         <label for="avreise">Avreise:</label>
-        <input type="date" name="Avreise" min="2017-01-01" max="2020-01-01"required = "">
+        <input type="date" name="Avreise" min="2017-01-01" max="2020-01-01"required = "" onchange="..javascript">
 <br></br>
 
 <fieldset>
@@ -87,12 +87,13 @@
 <input type="radio" name="radio" id="nei" value="nei">
 <label for="nei">Nei</label> <br>
 <label for="medlem">Hvis ja, skriv inn medlemsnummeret: </label>
-  <input type="textbox" name="meldlemsnummer" pattern="[0-9]{10}" required = ""> <br>
+  <input type="textbox" name="medlemsnummer" pattern="[0-9]{10}" required = ""> <br>
 </fieldset>
 <br>
       <textarea>Eventuelle kommentarer...</textarea>
     <input type="submit" value="Send inn">
 </div>
+jquary pris....div funksjon
 </form>
 <footer>Copyright © HytterForLife
   <p>Har du spørsmål? Send oss en <a href="mailto:regine_bk@example.com"> epost!</a><br></p>
