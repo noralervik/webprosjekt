@@ -11,7 +11,7 @@
 <div id="logo-container"><a href="prosjektindex.html"><img src="bilder/header1.jpg" alt="header" /></a></div>
 
 <ul>
-  <li><a class="active" href="prosjektindex.html">Hjem</a></li>
+  <li><a href="prosjektindex.html">Hjem</a></li>
   <li class="dropdown">
     <a href="#" class="dropbtn">Hytter</a>
     <div class="dropdown-content">
@@ -20,7 +20,7 @@
       <a href="hytteskog.html">Hytter i skog og mark</a>
     </div>
   <li><a href="kontakt.html">Kontakt</a></li>
-  <li><a href="bestilling.html">Bestilling</a></li>
+  <li><a class="active" href="bestilling.html">Bestilling</a></li>
   <li style="float:right"><a href="omoss.html">Om oss</a></li>
   <input type="text" name="search" placeholder="Søk på siden.."></i>
 
@@ -48,10 +48,6 @@
         <input type="text" id="tel" name="telefon" pattern="[0-9]{8}" required = "">
 </div>
 
-
-<!---div class="wpcf7-response-output wpcf7-display-none wpcf7-validation-errors" style="display: block;" role="alert">Det oppstod en feil. Kontroller feltene og prøv på nytt.///----->
-
-
 <p> Hvor mange skal overnatte?</p>
       <select name="antall">
         <option value="1">1</option>
@@ -71,26 +67,35 @@
         Velg reiselengde:
         <br></br>
         <label for="ankomst">Ankomst:</label>
-        <input type="date" name="Ankomst" min="2017-01-01" max="2020-01-01">
+        <input type="date" name="Ankomst" min="2017-01-01" max="2020-01-01" required = "">
         <label for="avreise">Avreise:</label>
-        <input type="date" name="Avreise" min="2017-01-01" max="2020-01-01">
-
-
+        <input type="date" name="Avreise" min="2017-01-01" max="2020-01-01"required = "">
 <br></br>
-    <input type="radio" name="Med vask" value="mvask" required = ""> Vi ønsker at hytten skal vaskes. <br>
-  <input type="radio" name="Uten vask" value="uvask" required = ""> Vi ønsker ikke hyttevask.
-  <p>Pris for hyttevask...</p>
+
+<fieldset>
+<legend>Vil du ha hyttevask etter avreise? (Pris: 400 kr)</legend>
+<input type="radio" name="radio" id="ja" value="ja">
+<label for="ja">Ja</label>
+<input type="radio" name="radio" id="nei" value="nei">
+<label for="nei">Nei</label>
+</fieldset>
+<br>
+<fieldset>
+<legend>Er du medlem av Turistforeningen? (15% rabatt)</legend>
+<input type="radio" name="radio" id="ja" value="ja">
+<label for="ja">Ja</label>
+<input type="radio" name="radio" id="nei" value="nei">
+<label for="nei">Nei</label> <br>
+<label for="medlem">Hvis ja, skriv inn medlemsnummeret: </label>
+  <input type="textbox" name="meldlemsnummer" pattern="[0-9]{10}" required = ""> <br>
+</fieldset>
 <br>
       <textarea>Eventuelle kommentarer...</textarea>
-
-
     <input type="submit" value="Send inn">
-
-
 </div>
 </form>
 <footer>Copyright © HytterForLife
-  <p>Har du spørsmål? Send oss en <a href="mailto:regine_bk@example.com">epost!</a><br></p>
+  <p>Har du spørsmål? Send oss en <a href="mailto:regine_bk@example.com"> epost!</a><br></p>
 
 </body>
 </html>

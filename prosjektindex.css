@@ -1,11 +1,9 @@
-
 .altunder{
   font-family: Calibri, sans-serif;
   margin-left: 90px;
   margin-right: 90px;
   margin-bottom: 40px;
 }
-
 
 #logo-container img {
    width: 100%;
@@ -84,7 +82,6 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {background-color: #lightgrey;}
-
 .dropdown:hover .dropdown-content {
     display: block;
     background-color: white;
@@ -115,7 +112,6 @@ li.dropdown {
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  text-align: center;
   top: 0;
 }
 
@@ -202,12 +198,10 @@ textarea {
     resize: none;
 }
 
-
 /* bildegalleri på hyttesidene*/
 div.img {
     border: 0px solid #ccc;
     margin:auto;
-
 }
 
 /*div.img:hover {
@@ -220,7 +214,7 @@ div.img img {
     padding-left: 5px;
     padding-right: 5px;
     height: auto;
-        border-radius: 12px;
+    border-radius: 12px;
 }
 
 div.desc {
@@ -295,12 +289,6 @@ div.desc {
     display: table;
     clear: both;
 }
-/*
-table {
-  margin-left: auto;
-  margin-right: auto;
-
-}
 
 /* Bestillingsknapper*/
 .button {
@@ -322,12 +310,10 @@ table {
     color: white;
   }
 
-
 /*omoss siden*/
 table, th, tbody, td, tr{
   border:1px solid black;
   padding:1em;
-
 }
 
 div.img2 img {
@@ -336,16 +322,17 @@ div.img2 img {
     padding-left: 25px;
     padding-right: 25px;
     height: 200px;
-        }
+}
 
 div.desc2 {
     padding: 5px;
     text-align: center;
     margin: auto;
-
 }
 
-
+fieldset {
+  border-color: white;
+}
 
 /* The Modal (background) */
 .modal {
