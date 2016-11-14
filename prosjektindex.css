@@ -318,6 +318,11 @@ table, th, tbody, td, tr{
 
 }
 
+@media only screen and (max-width: 1920px){
+  .kontaktskjema, .tidtabell {
+    width: 100%;
+  }
+}
 div.img2 img {
     width: auto;
     padding-top: 15px;
@@ -335,6 +340,11 @@ div.desc2 {
 fieldset {
   border-color: white;
 }
+
+.kontaktskjema {
+font-family: Calibri, sans-serif;
+}
+
 
 /* The Modal (background) */
 .modal {
