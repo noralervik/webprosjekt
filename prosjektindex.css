@@ -1,3 +1,9 @@
+.kolonner
+{
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  column-count: 2;
+}
+
 .altunder{
   font-family: Calibri, sans-serif;
   margin-left: 90px;
