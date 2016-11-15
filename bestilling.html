@@ -3,9 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>Hytteutleie</title>
+<link rel="icon" href="bilder/favicon.ico" type="favicon.ico">
 <link rel="stylesheet" href="prosjektindex.css"/>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+$("#vis").click(function(){
+$("p").hide();
+});
+$("#skjul").click(function(){
+$("p").show();
+});
+ET ELLER ANNA!!!!!!!
+</script>
 </head>
   <body>
 <div id="logo-container"><a href="prosjektindex.html"><img src="bilder/header1.jpg" alt="header" /></a></div>
@@ -33,22 +43,22 @@
 
 <h1>Bestill hytteopphold</h1>
 <p>Skriv inn informasjon blablablabla</p>
-
+<p> * Må fylles ut </p>
 <div id="skjema">
-    <label for="fname">Fornavn</label>
+    <label for="fname">Fornavn *</label>
     <input type="text" id="fname" name="firstname" required = "">
 <br>
-    <label for="lname">Etternavn</label>
+    <label for="lname">Etternavn *</label>
     <input type="text" id="lname" name="lastname" required = "">
 <br>
-<label for="mail">E-post</label>
+<label for="mail">E-post *</label>
   <input type="text" id="lname" name="email" required = "">
       <br>
-      <label for="tlf">Telefonnummer</label>
+      <label for="tlf">Telefonnummer *</label>
         <input type="text" id="tel" name="telefon" pattern="[0-9]{8}" required = "" >
 </div>
 
-<p> Hvor mange skal overnatte?</p>
+<p> Hvor mange skal overnatte? *</p>
       <select name="antall">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -64,7 +74,7 @@
         <option value="12">12</option>
       </select>
 <br></br>
-        Velg reiselengde:
+        Velg reiselengde: *
         <br></br>
         <label for="ankomst">Ankomst:</label>
         <input type="date" name="Ankomst" min="2017-01-01" max="2020-01-01" required = "">
@@ -73,7 +83,7 @@
 <br></br>
 
 <fieldset>
-<legend>Vil du ha hyttevask etter avreise? (Pris: 400 kr)</legend>
+<legend>Vil du ha hyttevask etter avreise? (Pris: 400 kr) *</legend>
 <input type="radio" name="radio" id="ja" value="ja">
 <label for="ja">Ja</label>
 <input type="radio" name="radio" id="nei" value="nei">
@@ -81,19 +91,60 @@
 </fieldset>
 <br>
 <fieldset>
-<legend>Er du medlem av Turistforeningen? (15% rabatt)</legend>
+<legend>Er du medlem av Turistforeningen? (15% rabatt) *</legend>
 <input type="radio" name="radio" id="ja" value="ja">
 <label for="ja">Ja</label>
 <input type="radio" name="radio" id="nei" value="nei">
 <label for="nei">Nei</label> <br>
-<label for="medlem">Hvis ja, skriv inn medlemsnummeret: </label>
+<label for="medlem">Hvis ja, skriv inn medlemsnummeret (10 tall): </label>
   <input type="textbox" name="medlemsnummer" pattern="[0-9]{10}" required = ""> <br>
 </fieldset>
 <br>
       <textarea>Eventuelle kommentarer...</textarea>
     <input type="submit" value="Send inn">
 </div>
-jquary pris....div funksjon
+
+
+<script>
+  var hytte1 = 600
+  var hytte2 = 800
+  var hytte3 = 1200
+  var hytte4 = 1600
+
+  var vask = 400
+  var reiseFra = getElementByClassName('Ankomst')
+  var reiseTil = getElementByClassName('Avreise')
+  var antallDager = reiseTil - reiseFra
+  var medlem = 0,15
+  var prisTotal
+
+if hytte1 then....
+    if vask
+        totalPris = hytte1 + vask
+    if medlem
+        totalPris = totalPris*0,15
+
+if hytte2 then
+    if vask
+        totalPris = hytte1 + vask
+    if medlem
+        totalPris = totalPris*0,15
+
+
+    if hytte3 then
+        if vask
+            totalPris = hytte1 + vask
+        if medlem
+            totalPris = totalPris*0,15
+
+      if hytte4 then
+          if vask
+          totalPris = hytte1 + vask
+        if medlem
+          totalPris = totalPris*0,15
+
+</script>
+
 </form>
 <footer>Copyright © HytterForLife
   <p>Har du spørsmål? Send oss en <a href="mailto:regine_bk@example.com"> epost!</a><br></p>
