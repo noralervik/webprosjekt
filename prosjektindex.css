@@ -337,8 +337,16 @@ div.desc {
 table, th, tbody, td, tr{
   border:1px solid black;
   padding: 0.1em;
+  margin: auto;
 
 }
+
+.kol1
+  {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    column-count: 3;
+    column-width: 300px;
+  }
 
 @media only screen and (max-width: 1920px){
   .kontaktskjema, .tidtabell {
