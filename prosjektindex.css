@@ -32,6 +32,7 @@ h2 {
   color: lightgrey;
 }
 
+
 #styled-list {
     list-style-type:none;
     color: #0000FF;
@@ -105,6 +106,7 @@ li.dropdown {
   max-width: 700px;
   position: relative;
   margin: auto;
+  float: right;
 }
 .mySlides {display:none;}
 
@@ -231,8 +233,9 @@ div.img img {
 }
 
 div.desc {
-    padding: 15px;
-    text-align: center;
+    padding: 25px;
+
+      font-size: 22px;
 }
 
 *{
@@ -419,6 +422,7 @@ font-size: 15px;
   max-width: 500px;
   position: relative;
   margin: auto;
+
 }
 
 /* Next & previous buttons */
