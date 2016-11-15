@@ -1,5 +1,4 @@
-.kolonner
-{
+.kolonner{
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   column-count: 2;
 }
@@ -9,13 +8,6 @@
   margin-left: 90px;
   margin-right: 90px;
   margin-bottom: 40px;
-}
-
-.venstrekolonne{
-  te
-}
-.høyrekolonne{
-
 }
 
 #logo-container img {
