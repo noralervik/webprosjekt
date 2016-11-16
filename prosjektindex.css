@@ -359,6 +359,11 @@ div.img2 img {
 }
 
 div.desc2 {
+  padding: 5px;
+    font-size: 16px;
+}
+
+div.desc3 {
   padding: 25px;
     font-size: 26px;
 }
