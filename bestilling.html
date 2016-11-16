@@ -3,9 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Hytteutleie</title>
+<link rel="icon" href="bilder/favicon.ico" type="favicon.ico">
 <link rel="stylesheet" href="prosjektindex.css"/>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
   <body>
 <div id="logo-container"><a href="prosjektindex.html"><img src="bilder/header1.jpg" alt="header" /></a></div>
@@ -27,74 +29,92 @@
 
 </ul>
 
-<form action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php">
-
 <div class="altunder">
 
-<h1>Bestill hytteopphold</h1>
-<p>Skriv inn informasjon blablablabla</p>
+<form action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php" id="hyttene" onsubmit="return false;">
+  <!-- <fieldset> -->
 
-<div id="skjema">
-    <label for="fname">Fornavn</label>
-    <input type="text" id="fname" name="firstname" required = "">
-<br>
-    <label for="lname">Etternavn</label>
-    <input type="text" id="lname" name="lastname" required = "">
-<br>
-<label for="mail">E-post</label>
-  <input type="text" id="lname" name="email" required = "">
-      <br>
-      <label for="tlf">Telefonnummer</label>
-        <input type="text" id="tel" name="telefon" pattern="[0-9]{8}" required = "" >
-</div>
+  <h1>Bestill hytteopphold</h1>
+  <p>Skriv inn informasjon blablablabla</p>
+  <p> * Må fylles ut </p>
+  <div id="skjema">
+      <label for="fname">Fornavn *</label>
+      <input type="text" id="fname" name="firstname" required = "">
+  <br>
+      <label for="lname">Etternavn *</label>
+      <input type="text" id="lname" name="lastname" required = "">
+  <br>
+  <label for="mail">E-post *</label>
+    <input type="text" id="lname" name="email" required = "">
+        <br>
+        <label for="tlf">Telefonnummer *</label>
+          <input type="text" id="tel" name="telefon" pattern="[0-9]{8}" required = "" >
+  </div>
 
-<p> Hvor mange skal overnatte?</p>
-      <select name="antall">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-      </select>
+    <label >Hyttetyper</label> <br>
+    <select id="hytteTypes" name='hytteTypes' onchange="calculateTotal()">
+    <option value="None">Velg hytte</option>
+    <option value="Sjøhytte1">Sjøhytte 1 - 1200 kr</option>
+    <option value="Sjøhytte2">Sjøhytte 2 - 1400 kr</option>
+    <option value="Sjøhytte3">Sjøhytte 3 - 1600 kr</option>
+    <option value="Sjøhytte4">Sjøhytte 4 - 2000 kr</option>
+    <option value="Fjellhytte1">Fjellhytte 1 - 1200 kr</option>
+    <option value="Fjellhytte2">Fjellhytte 2 - 1400 kr</option>
+    <option value="Fjellhytte3">Fjellhytte 3 - 1600 kr<option>
+    <option value="Fjellhytte4">Fjellhytte 4 - 2000 kr</option>
+    <option value="Skogshytte1">Skogshytte 1 - 1200 kr</option>
+    <option value="Skogshytte2">Skogshytte 2 - 1400 kr</option>
+    <option value="Skogshytte3">Skogshytte 3 - 1600 kr</option>
+    <option value="Skogshytte4">Skogshytte 4 - 2000 kr</option>
+   </select>
+    <br><br>
+
+    <fieldset>
+    <legend>Ønsker du vask av hytten? *</legend>
+    Vask av hytten koster 400 kr. <br>
+    <input type="radio"  name="vask" value="Ja" onclick="calculateTotal()" />Ja<br>
+    <input type="radio"  name="vask" value="Nei" onclick="calculateTotal()" />Nei<br><br>
+    </fieldset>
+
+    <fieldset>
+    <legend>Er du medlem i Turistforeningen? *</legend><br>
+    15% avslag for medlemmer. <br>
+    <input type="radio"  name="medlem" value="Nei" onclick="calculateTotal()" />Nei<br>
+    <input type="radio"  name="medlem" value="Ja" onclick="calculateTotal()" />Ja<br><br>
+    </fieldset>
+
+    Velg reiselengde: *
+    <br></br>
+    <label for="ankomst">Ankomst:</label>
+    <input type="date" name="Ankomst" min="2017-01-01" max="2020-01-01" required = "">
+    <label for="avreise">Avreise:</label>
+    <input type="date" name="Avreise" min="2017-01-01" max="2020-01-01"required = "">
 <br></br>
-        Velg reiselengde:
-        <br></br>
-        <label for="ankomst">Ankomst:</label>
-        <input type="date" name="Ankomst" min="2017-01-01" max="2020-01-01" required = "">
-        <label for="avreise">Avreise:</label>
-        <input type="date" name="Avreise" min="2017-01-01" max="2020-01-01"required = "" onchange="..javascript">
-<br></br>
 
-<fieldset>
-<legend>Vil du ha hyttevask etter avreise? (Pris: 400 kr)</legend>
-<input type="radio" name="radio" id="ja" value="ja">
-<label for="ja">Ja</label>
-<input type="radio" name="radio" id="nei" value="nei">
-<label for="nei">Nei</label>
-</fieldset>
-<br>
-<fieldset>
-<legend>Er du medlem av Turistforeningen? (15% rabatt)</legend>
-<input type="radio" name="radio" id="ja" value="ja">
-<label for="ja">Ja</label>
-<input type="radio" name="radio" id="nei" value="nei">
-<label for="nei">Nei</label> <br>
-<label for="medlem">Hvis ja, skriv inn medlemsnummeret: </label>
-  <input type="textbox" name="medlemsnummer" pattern="[0-9]{10}" required = ""> <br>
-</fieldset>
-<br>
-      <textarea>Eventuelle kommentarer...</textarea>
-    <input type="submit" value="Send inn">
-</div>
-jquary pris....div funksjon
+  <!--  <p>
+    <label for='includecandles' class="inlinelabel"> Include Candles($5)</label>
+    <input type="checkbox" id="includecandles" name='includecandles' onclick="calculateTotal()" /><br>
+   </p>
+
+    <p>
+    <label class="inlinelabel" for='includeinscription'> Include Inscription($20)</label>
+    <input type="checkbox" id="includeinscription" name="includeinscription" onclick="calculateTotal()" />
+    <input type="text"  id="theinscription" name="theinscription" value="Enter Inscription"  /><br>
+    </p>
+
+    <!--Include candles <input type="checkbox" id="includecandles" /><br>
+    Quantity <input type="text"  name="quantity" id="quantity" /><br> -->
+
+  <b>  <div id="totalPris"></div> </b><br>
+  <!--  <div id="getTotal" style="display: block;"></div> -->
+
+<script src="javascriptPriser.js"></script>
+
+  <textarea>Eventuelle kommentarer...</textarea>
+<input type="submit" value="Send inn">
 </form>
+</div>
+
 <footer>Copyright © HytterForLife
   <p>Har du spørsmål? Send oss en <a href="mailto:regine_bk@example.com"> epost!</a><br></p>
 

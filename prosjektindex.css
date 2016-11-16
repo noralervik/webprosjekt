@@ -1,5 +1,4 @@
-.kolonner
-{
+.kolonner{
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   column-count: 2;
 }
@@ -235,7 +234,12 @@ div.img img {
 
 div.desc {
     padding: 25px;
+<<<<<<< HEAD
       font-size: 22px;
+=======
+
+      font-size: 16px;
+>>>>>>> origin/master
 }
 
 *{
@@ -330,8 +334,16 @@ div.desc {
 table, th, tbody, td, tr{
   border:1px solid black;
   padding: 0.1em;
+  margin: auto;
 
 }
+
+.kol1
+  {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    column-count: 3;
+    column-width: 300px;
+  }
 
 @media only screen and (max-width: 1920px){
   .kontaktskjema, .tidtabell {
