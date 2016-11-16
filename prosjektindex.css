@@ -3,13 +3,6 @@
   column-count: 2;
 }
 
-.kolonner2
-{
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-}
-
 .altunder{
   font-family: Calibri, sans-serif;
   margin-left: 90px;
@@ -39,6 +32,12 @@ h2 {
 }
 
 
+#styled-list {
+    list-style-type:none;
+    color: #0000FF;
+    padding: 10px 20px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -46,12 +45,15 @@ ul {
     overflow: hidden;
     background-color: #333;
     font-family: Calibri, sans-serif;
+        padding-top: 15px;
+        padding-bottom: 10px;
 }
 
 li {
-    float: left;
+    float: right;
     border-right:1px solid #bbb;
     border-left: 1px solid #bbb;
+
 }
 
 
@@ -106,7 +108,7 @@ li.dropdown {
   max-width: 700px;
   position: relative;
   margin: auto;
-  float: right;
+  float: center;
 }
 .mySlides {display:none;}
 
@@ -234,12 +236,8 @@ div.img img {
 
 div.desc {
     padding: 25px;
-<<<<<<< HEAD
-      font-size: 22px;
-=======
 
       font-size: 16px;
->>>>>>> origin/master
 }
 
 *{
@@ -359,6 +357,7 @@ div.img2 img {
 }
 
 div.desc2 {
+<<<<<<< HEAD
   padding: 5px;
     font-size: 16px;
 }
@@ -366,6 +365,11 @@ div.desc2 {
 div.desc3 {
   padding: 25px;
     font-size: 26px;
+=======
+    padding: 5px;
+    text-align: center;
+    margin: auto;
+>>>>>>> origin/master
 }
 
 fieldset {
