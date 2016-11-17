@@ -70,10 +70,10 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
     font-family: Calibri, sans-serif;
-        padding-top: 15px;
-        padding-bottom: 10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-image: url(bilder/banner.jpg);
 }
 
 li {
@@ -264,7 +264,7 @@ div.img img {
 div.desc {
     padding: 25px;
 
-      font-size: 16px;
+      font-size: 18px;
 }
 
 *{
@@ -389,11 +389,8 @@ div.desc2 {
 }
 
 div.desc3 {
-  padding: 25px;
-    font-size: 26px;
-    padding: 5px;
-    text-align: center;
-    margin: auto;
+  padding: 5px;
+    font-size: 20px;
 }
 
 fieldset {
@@ -462,8 +459,13 @@ font-size: 15px;
 
 * {box-sizing:border-box}
 /* Slideshow container */
+<<<<<<< HEAD
 .slideshow-container2, .slideshow-container3, .slideshow-container4, .slideshow-container5 {
   max-width: 800px;
+=======
+.slideshow-container2 {
+  max-width: 700px;
+>>>>>>> origin/master
   position: relative;
   margin: auto;
 
