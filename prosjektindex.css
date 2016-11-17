@@ -1,7 +1,30 @@
 .kolonner{
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  column-count: 2;
+ column-count: 2;
+width: auto;
+margin: auto;
+width: 100%;
+color: white;
+font: 15px bold Calibri, Sans-Serif;
+background: rgba(0, 0, 0, 0.7);
+background-image: image(bilder/regler.jpeg);
+line-height: 30px;
+
 }
+
+.kolonner3{
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+ column-count: 2;
+width: auto;
+margin: auto;
+width: 100%;
+font: 15px bold Calibri, Sans-Serif;
+
+background-image: image(bilder/regler.jpeg);
+line-height: 30px;
+padding-top: 100px;
+}
+
 
 .altunder{
   font-family: Calibri, sans-serif;
