@@ -93,43 +93,28 @@ function hentHyttePris()
    return hytteValgtPris;
 }
 
-/*
-//candlesPrice() finds the candles price based on a check box selection
-function candlesPrice()
-{
-   var candlePrice=0;
-   //Get a reference to the form id="hyttene"
-   var theForm = document.forms["hyttene"];
-   //Get a reference to the checkbox id="includecandles"
-   var includeCandles = theForm.elements["includecandles"];
+function hent_dager() {
+   var theForm = document.forms["hyttene"]
+    var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+    var firstDate = new Date(getElementsByClassName('ankomst'));
+    var secondDate = new Date(getElementsByClassName('avreise'));
 
-   //If they checked the box set candlePrice to 5
-   if(includeCandles.checked==true)
-   {
-       candlePrice=5;
-   }
-   //finally we return the candlePrice
-   return candlePrice;
+//  firstDate = theForm.elements["ankomst"]
+//  secondDate = theForm.elements["avreise"]
+
+    var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+   return diffDays;
 }
 
-function insciptionPrice()
-{
-   //This local variable will be used to decide whether or not to charge for the inscription
-   //If the user checked the box this value will be 20
-   //otherwise it will remain at 0
-   var inscriptionPrice=0;
-   //Get a refernce to the form id="hyttene"
-   var theForm = document.forms["hyttene"];
-   //Get a reference to the checkbox id="includeinscription"
-   var includeInscription = theForm.elements["includeinscription"];
-   //If they checked the box set inscriptionPrice to 20
-   if(includeInscription.checked==true){
-       inscriptionPrice=20;
-   }
-   //finally we return the inscriptionPrice
-   return inscriptionPrice;
-}
- */
+
+ function calculateDays()
+ {
+   var antall_Dager = hent_dager();
+   var divobj2 = document.getElementById('antall_dager');
+   divobj2.style.display='block';
+   divobj2.innerHTML = "Antall dager: " + antall_Dager + " dag/dager.";
+ }
+
 function calculateTotal()
 {
    //Here we get the total price by calling our function
@@ -140,11 +125,15 @@ function calculateTotal()
    var divobj = document.getElementById('totalPris');
    divobj.style.display='block';
    divobj.innerHTML = "Den totale prisen for hytten deres er: " + totalPris + " kroner.";
-
+  // divobj.innerHTML = "Navn på reisende: " + ...
 }
+
+
 
 function hideTotal()
 {
    var divobj = document.getElementById('totalPris');
+   var divobj2 = document.getElementById('antall_dager');
+   divobj2.style.display='none';
    divobj.style.display='none';
 }

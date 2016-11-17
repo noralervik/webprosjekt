@@ -178,9 +178,9 @@ Footeren vår består av copyrighten vår til siden og en kontaktlink som fører
     Velg reiselengde: *
     <br></br>
     <label for="ankomst">Ankomst:</label>
-    <input type="date" name="Ankomst" min="2017-01-01" max="2020-01-01" required = "">
+    <input type="date" name="ankomst" min="2017-01-01" max="2020-01-01" required = "" onclick="calculateDays()">
     <label for="avreise">Avreise:</label>
-    <input type="date" name="Avreise" min="2017-01-01" max="2020-01-01"required = "">
+    <input type="date" name="avreise" min="2017-01-01" max="2020-01-01"required = "" onclick="calculateDays()">
 <br></br>
 <!--- END REISELENGDE --->
 
@@ -200,6 +200,7 @@ Footeren vår består av copyrighten vår til siden og en kontaktlink som fører
 
 <!--- § 2.4 TOTALPRIS --->
   <b>  <div id="totalPris"></div> </b><br>
+  <b>  <div id="antall_dager"></div> </b> <br>
   <!--  <div id="getTotal" style="display: block;"></div> -->
   <!--- END TOTALPRIS --->
 
