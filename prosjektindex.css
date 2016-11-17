@@ -11,6 +11,11 @@ background-image: image(bilder/regler.jpeg);
 line-height: 30px;
 }
 
+.kolonner2{
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+ column-count: 2;
+}
+
 .kolonner3{
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
  column-count: 2;
@@ -460,7 +465,7 @@ font-size: 15px;
 * {box-sizing:border-box}
 /* Slideshow container */
 .slideshow-container2 {
-  max-width: 500px;
+  max-width: 800px;
   position: relative;
   margin: auto;
 
