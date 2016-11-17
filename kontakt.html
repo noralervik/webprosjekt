@@ -1,46 +1,93 @@
-<!DOCTYPE html>
 <!---****INNHOLDSFORTEGNELSE FOR KODEBRUK****
-§ 1.1 -
+§ 1.0 - HTML
+DOCTYPE HTML brukes som god skikk for webutvikling og hver HTML fil skal starte med dette.
 
-§ 1.2 -
+§ 1.1 - LANGUAGE
+Vi setter her språket på siden vår til Norge/norsk (lang="no").
 
-§ 1.3 -
+§ 1.2 - HEADER
+Her starter Headeren vår. Header består av logo øverst til venstre, navigasjonsbar/menyliste øverst til høyre. Headeren er som etter navnet;
+hodet - altså øverst på siden.
+
+§ 1.3 - IKON OG STYLESHEET
+Ikonet er bildet du ser på selve tab-baren i nettleseren. Denne skal være en indikator for hvilken side du er på, slik at du enkelt ser det blant mange faner.
+Stylesheet er stilarket vi har brukt på siden, og denne er linket til CSS-filen vår. Stylesheeten sørger for visuell utforming og selve designet.
+
+§ 1.4 - TITTEL
+Tittelen er selve tittelen på siden brukeren blir møtt med. Vi har ulik tittel for hver side, og til denne spesifikke siden
+er tittelen "Kontakt".
+
+§ 1.5 - BODY
+Body er selve "Kroppen" til HTML filen vår til bestillingssiden. Her ligger selve hovedinnholdet på siden.
+
+§ 1.6 - FORM
+Form er selve utformingen til skjemaet og definerer antall felt fra CSS filen.
+
+§ 1.7 - UNORDERED LIST
+Unordered list eller UL er vår uordnede liste som legger alle de ulike menyvalgene i en liste som ikke er ordnet/rangert.
+
+§ 1.8 - FORSIDE(INDEX)
+Trykker du direkte på logoen oppe til venstre side (Drømmehytta) vil du komme tilbake til hovedsiden vår/startsiden.
+Denne logoen er linket til forsiden direkte med en hyperlink bak bildet.
+
+§ 1.9 - MENY
+Menyen vår består av de ulike HTML sidene vi har generert til nettsiden. Hver av disse valgene har sin spesifikke HTML og CSS koding til siden.
+Den består av en bestillingsknapp, hjemknapp, hytteknapp med dropdown-content og en kontaktknapp.
+
+§ 1.10 - ALTUNDER
+All tekst og bilde mellom header og footer.
 
 
-§ 1.4 -
+§ 2.0 - KOLONNER
+Kolonner er brukt for å skrive inn litt tekst til de besøkende og gi litt informasjon om skjemaet og forventet svartid.
 
-§ 1.5 -
+§ 2.1 - SKJEMA
+Skjemaet krever at hvert enkelt felt må fylles ut av brukeren, og de er derfor "required". Det kreves at brukeren fyller inn ting som navn, e-postadresse og et felt hvor brukeren fyller inn,
+det han/hun lurer på.
 
-§ 1.6 -
+§ 2.2 - TWITTER
+Her har vi lagt inn en Twitterkobling som viser de seneste hashtagsa med #hytteliv. Dette er for å oppfordre besøkende til å ta i bruk hashtagen så vel som å skape en liten kobling mellom
+oss og sosiale medier.
 
-§ 1.7 -
+§ 2.3 - JAVASCRIPT
+Javascriptfilen er filen som gjør det mulig for oss å legge inn selve Twitterkoblingen. Denne javascripten eksiterer kun til kontakt.html og har ikke en egen fil-sti.
 
-§ 1.8 -
-
-§ 1.9 -
-
-§ 1.10 -
-
-§ 2.0 -
+§ 2.4 - FOOTER
+Footeren vår består av copyrighten vår til siden og en kontaktlink som fører til e-post dersom besøkende skulle ønske å ta kontakt med oss.
 --->
+
+<!--- § 1.0 HTML --->
+<!DOCTYPE html>
+<!--- END HTML --->
+<!--- § 1.1 LANGUAGE --->
 <html lang="no">
+<!--- END LANGUAGE --->
+<!--- § 1.2 HEADER --->
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="prosjektindex.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--- § 1.3 IKON OG STYLESHEET --->
+<link rel="stylesheet" href="prosjektindex.css"/>
 <link rel="icon" href="bilder/favicon.ico" type="favicon.ico">
+<!--- END IKON OG STYLESHEET --->
+<!--- § 1.4 TITTEL --->
 <title>Hytteutleie - Kontakt</title>
+<!--- END TITTEL --->
 </head>
+<!--- END HEADER --->
+<!--- § 1.5 BODY --->
 <body>
 
   <!--<div id="logo-container"><a href="prosjektindex.html"><img src="bilder/header_forslag8.jpg" alt="" /></a></div>-->
+  <!--- § 1.6 FORM --->
   <form>
+    <!--- § 1.7 UNORDERED LIST --->
   <ul>
-      <!--- § 1.2 FORSIDEINDEX --->
+      <!--- § 1.8 FORSIDEINDEX --->
       <a href="prosjektindex.html"><img src="bilder/logo6.png" width="400px"></a>
         <!--- END FORSIDEINDEX --->
 
-    <!--- § 1.3 MENY --->
+    <!--- § 1.9 MENY --->
     <li><a href="omoss.html" class="dropbtn">Om oss</a>
               <li><a class="active" href="kontakt.html">Kontakt</a></li>
         <li><a href="bestilling.html">Bestilling</a></li>
@@ -59,8 +106,9 @@
   </form>
 <!--- END MENY --->
 
-
+<!--- § 1.10 ALTUNDER --->
 <div class="altunder">
+  <!--- § 2.0 KOLONNER --->
   <div class="kolonner">
   <h1>Kontakt oss</h1>
   <p>* Må fylles ut</p>
@@ -68,6 +116,7 @@
 <p>Er det noe du lurer på, og ønsker å stille oss spørsmål? Vi tar imot både ris og ros med glede.
 Forventet svarstid er innen to timer.</p>
 
+<!--- § 2.1 SKJEMA --->
 <div id="skjema">
   <form action="action_page.php">
     <label for="fname">Fornavn *</label>
@@ -82,10 +131,15 @@ Forventet svarstid er innen to timer.</p>
     <input type="submit" value="Send inn">
   </form>
 </div>
+<!--- END SKJEMA --->
 <br><br><br><br>
+<!--- § 2.2 TWITTER --->
 <a class="twitter-timeline"  href="https://twitter.com/hashtag/hytteliv" data-widget-id="796321938650136576" width="500" height="700" float="left">#hytteliv-tweets</a>
+<!--- END TWITTER --->
 
 </div>
+<!--- END KOLONNER --->
+<!--- § 2.3 JAVASCRIPT --->
 <script>
 !function(d,s,id)
 {var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
@@ -93,13 +147,18 @@ if(!d.getElementById(id)){js=d.createElement(s);
   js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
   fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
   </script>
+  <!--- END JAVASCRIPT --->
 </div>
-</div>
+<!--- END ALTUNDER --->
 
+<!--- § 2.4 FOOTER --->
 <footer>Copyright © HytterForLife
   <p>Har du spørsmål? Send oss en <a href="mailto:regine_bk@example.com">epost!</a><br></p>
   </footer>
+  <!--- END FOOTER --->
 
 
 </body>
+<!--- END BODY --->
 </html>
+<!--- END HTML --->
