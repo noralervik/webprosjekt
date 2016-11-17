@@ -93,49 +93,10 @@ function hentHyttePris()
    return hytteValgtPris;
 }
 
-/* function hent_dager() {
-//   var theForm = document.forms["hyttene"]
-    var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
-    var firstDate = new Date(2017-01-01);
-    var secondDate = new Date(2020-01-01);
-
-//  firstDate = theForm.elements["ankomst"]
-//  secondDate = theForm.elements["avreise"]
-
-    var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
-   return diffDays;
-}  */
-/*
-function hent_dager(){
-
-Date.daysBetween = function( date1, date2 ) {
-  //Get 1 day in milliseconds
-  var one_day=1000*60*60*24;
-  // Convert both dates to milliseconds
-  var date1_ms = date1.getTime();
-  var date2_ms = date2.getTime();
-  // Calculate the difference in milliseconds
-  var difference_ms = date2_ms - date1_ms;
-  // Convert back to days and return
-  return Math.round(difference_ms/one_day);
-}
-//Set the two dates
-var y2k  = new Date(2000, 0, 1);
-var Jan1st2010 = new Date(y2k.getFullYear() + 10, y2k.getMonth(), y2k.getDate());
-var today= new Date();
-//displays 726
-console.log( 'Days since ' + Jan1st2010.toLocaleDateString() + ': ' + Date.daysBetween(Jan1st2010, today));
-
-} */
  function calculateDays()
  {
-   /*
-   var antall_Dager = hent_dager(); */
 
    var divobj2 = document.getElementById('antall_dager');
-//var ankomst = new Date("2016-11-17");
-//var avreise = new Date("2016-11-19");
-//var test = document.getElementById('ankomst').value;
    var ankomst = new Date(document.getElementById('ankomst').value);
    var avreise = new Date(document.getElementById('avreise').value);
 
