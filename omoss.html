@@ -1,77 +1,57 @@
 <!---****INNHOLDSFORTEGNELSE FOR KODEBRUK****
 § 1.0 - HTML
-
+DOCTYPE HTML brukes som god skikk for webutvikling og hver HTML fil skal starte med dette.
 
 § 1.1 - LANGUAGE
-
+Vi setter her språket på siden vår til Norge/norsk (lang="no").
 
 § 1.2 - HEADER
+Her starter Headeren vår. Header består av logo øverst til venstre, navigasjonsbar/menyliste øverst til høyre. Headeren er som etter navnet;
+hodet - altså øverst på siden.
 
-
-§ 1.3 - STYLESHEET OG IKON
-
+§ 1.3 - IKON OG STYLESHEET
+Ikonet er bildet du ser på selve tab-baren i nettleseren. Denne skal være en indikator for hvilken side du er på, slik at du enkelt ser det blant mange faner.
+Stylesheet er stilarket vi har brukt på siden, og denne er linket til CSS-filen vår. Stylesheeten sørger for visuell utforming og selve designet.
 
 § 1.4 - TITTEL
-
+Tittelen er selve tittelen på siden brukeren blir møtt med. Vi har ulik tittel for hver side, og til denne spesifikke siden
+er tittelen "Kontakt".
 
 § 1.5 - BODY
-
+Body er selve "Kroppen" til HTML filen vår til bestillingssiden. Her ligger selve hovedinnholdet på siden.
 
 § 1.6 - FORM
-
+Form er selve utformingen til skjemaet og definerer antall felt fra CSS filen.
 
 § 1.7 - UNORDERED LIST
-
+Unordered list eller UL er vår uordnede liste som legger alle de ulike menyvalgene i en liste som ikke er ordnet/rangert.
 
 § 1.8 - FORSIDE(INDEX)
-
+Trykker du direkte på logoen oppe til venstre side (Drømmehytta) vil du komme tilbake til hovedsiden vår/startsiden.
+Denne logoen er linket til forsiden direkte med en hyperlink bak bildet.
 
 § 1.9 - MENY
-
+Menyen vår består av de ulike HTML sidene vi har generert til nettsiden. Hver av disse valgene har sin spesifikke HTML og CSS koding til siden.
+Den består av en bestillingsknapp, hjemknapp, hytteknapp med dropdown-content og en kontaktknapp.
 
 § 1.10 - ALTUNDER
-
+All tekst og bilde mellom header og footer.
 
 § 2.0 - KOLONNE 1
-
+Kolonne 1 er informasjon om bedriften og de ulike hyttene vi tilbyr. Det er også her vi prøver å gi et innblikk til bedriften og hva vi som bedrift kan gi kunden.
 
 § 2.1 - Tidtabell
+Tidtabellen er når de ansatte/bedriften har telefontider og har muligheten til å bli kontaktet per telefon.
 
+§ 2.2 - ANSATTE
+Her ligger all kontaktinformasjon til alle ansatte. Vi har også lagt inn bilder av hver enkelt ansatt.
 
-§ 2.2 -
+§ 2.3 - KOLONNENR3
+Kolonne nr3 (litt dårlig valgt navn) består av en YouTube film på siden vår som viser Trondheim og de ulike turistmulighetene i byen.
+Vi har også lagt inn en kobling og vindu direkte til Google Maps som viser beliggenheten til bedriften/hovedkontoret vårt.
 
-
-§ 2.3 -
-
-
-§ 2.4 -
-
-
-§ 2.5 -
-
-
-§ 2.6 -
-
-
-§ 2.7 -
-
-
-§ 2.8 -
-
-
-§ 2.9 -
-
-
-§ 2.10 -
-
-
-§ 3.0 -
-
-
-
-
-
-
+§ 2.4 - FOOTER
+Footeren vår består av copyrighten vår til siden og en kontaktlink som fører til e-post dersom besøkende skulle ønske å ta kontakt med oss.
 
 -->
 
@@ -189,7 +169,8 @@ Vi har svaret på din hyttedrøm og vi har hytter til leie i hele Trondheim for 
   <!--- END KOLONNE 1 --->
 
 <br><br>
-<div class ="kontaktskjema">
+<!--- §2.2 ANSATTE --->
+<div class ="ansatte">
   <table>
       <tr>
 <td>
@@ -248,10 +229,11 @@ Vi har svaret på din hyttedrøm og vi har hytter til leie i hele Trondheim for 
       </tr>
 </td>
       </div>
+      <!--- END ANSATTE --->
 </table>
 
 <br><br>
-<!--- X.X KOLONNE 3 --->
+<!--- §2.3 KOLONNE 3 --->
 <div class = "kolonner3">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UV25wR3oa3g" frameborder="0" allowfullscreen align=right></iframe>
@@ -262,8 +244,10 @@ Vi har svaret på din hyttedrøm og vi har hytter til leie i hele Trondheim for 
 </div>
 <!--- END ALTUNDER --->
 
+<!--- §2.4 FOOTER --->
 <footer>Copyright © HytterForLife
   <p>Har du spørsmål? Send oss en <a href="mailto:regine_bk@example.com">epost!</a><br></p>  </footer>
+  <!--- END FOOTER --->
 
 </body>
 <!--- END BODY --->
