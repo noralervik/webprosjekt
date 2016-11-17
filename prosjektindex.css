@@ -25,6 +25,14 @@ line-height: 30px;
 padding-top: 100px;
 }
 
+<<<<<<< HEAD
+=======
+.kolonner2{
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
+>>>>>>> origin/master
 
 .altunder{
   font-family: Calibri, sans-serif;
@@ -460,7 +468,7 @@ font-size: 15px;
 * {box-sizing:border-box}
 /* Slideshow container */
 .slideshow-container2 {
-  max-width: 500px;
+  max-width: 850px;
   position: relative;
   margin: auto;
 

@@ -63,55 +63,75 @@
 
   <div class="responsive">
     <div class="img">
-        <img src="bilder/fjell1.jpeg" alt="Fjellhytte" height="250">
-      </a>
+        <img src="bilder/fjell1.jpeg" alt="Fjellhytte" height="250">  </a>
       <button id="myBtn">Informasjon</button> <!-- Åpner modalen -->
       <div id="myModal" class="modal">  <!-- The Modal -->
         <div class="modal-content"> <!-- Modal content -->
           <span class="close">×</span>
-          <p>
-      <!--      <ul id="styled-list"><h4>Hytten inneholder følgende</h4>
-  <li>Soverom:7</li>
-  <li>Størrelse:252m^2</li>
-  <li>Sengeplasser:14</li>
-</ul>
-<p>
-  <ul><h4>Fasitiliteter</h4>
-<li>Internettilgang</li>
-<li>Div hvitevarer</li>
-<li>Vaskemaskin+tørketrommel</li>
-<li>TV+DVD</li>
-<li>Husdyr tillatt</li>
-<li>Boblebad</li>
-</ul> -->
 
-
-<h1>Hytte 1 innebærer følgende: <br></h1>
-<div class="kolonner">
-Størrelse: 252 kvadratmeter <br>
-Soverom: 7 <br>
-Bad: 2 <br>
-Sengeplasser:14 <br>
-<br>
-
-Fasitiliteter: <br>
-- Internettilgang <br>
-- Div hvitevarer <br>
-- Vaskemaskin og tørketrommel <br>
-- TV og DVD-spiller <br>
-- Boblebad <br>
-- Husdyr tillatt <br>
-</div>
-
-
-<p><div class="desc">Stort og komfortabel hytte med idyllisk beliggenhet ved sjøen i Einvika, ca 4 km vest for tettstedet Lauvsnes.
+          <h1>Hytte 1 byr på følgende:</h1>
+            <div class="kolonner2">
+              <div class="desc">
+                  Størrelse: 252 kvadratmeter <br>
+                  Soverom: 7 <br>
+                  Bad: 2 <br>
+                  Badstue: Ja <br>
+                  Sengeplasser:14 <br>
+                  <br>
+                  <br>
+                  <br>
+                  <input type="checkbox" checked="checked"disabled>Internettilgang <br>
+                  <input type="checkbox" checked="checked"disabled>Div hvitevarer <br>
+                  <input type="checkbox" checked="checked"disabled>Vaskemaskin og tørketrommel <br>
+                  <input type="checkbox" checked="checked"disabled>TV og DVD-spiller <br>
+                  <input type="checkbox" checked="checked"disabled>Boblebad <br>
+                  <input type="checkbox" checked="checked"disabled>Husdyr tillatt <br>
+          </div>
+        </div>
+<button class="button button4"><a href="bestilling.html">Bestill hytte 1</a></button>
+<hr>
+<p><div class="desc3">Stort og komfortabel hytte med idyllisk beliggenhet ved sjøen i Einvika, ca 4 km vest for tettstedet Lauvsnes.
 Pen og barnevennlig naturtomt med god plass. Lekeplass. Unike muligheter for fotture langs sjøen. Flotte sandstrender med bademuligheter.
 Kjent som Norges største havørnområde.
 Fra huset og terrassen har man en magisk utsikt til havet, som her med sine uttallige fiskerike fiskegrunner og store dyp er en utfordring for enhever fisker.
 Åpent hav med store fisker venter på deg. Flere båter kan leies. 75 km fra feriehuset ligger den berømte lakseelven Namsen. </div> </p>
+<br>
+
+<div class="slideshow-container2">
+<div class="mySlides2 fade2">
+  <div class="numbertext">1 / 3</div>
+  <img src="bilder/skogInni.JPEG" style="width:100%">
+  <div class="text">Stuene med utsikt over skogen</div>
+</div>
+
+<div class="mySlides2 fade2">
+  <div class="numbertext">2 / 3</div>
+  <img src="bilder/skogInni2.JPG" style="width:100%">
+  <div class="text">Romslige og åpne soverom</div>
+</div>
+
+<div class="mySlides2 fade2">
+  <div class="numbertext">3 / 3</div>
+  <img src="bilder/skogUtsikt.JPEG" style="width:100%">
+  <div class="text">Ta deg en tur i nydelige omgivelser</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+<br>
 
 
-<button class="button button4"><a href="bestilling.html">Bestill (hyttenavn)</a></button>
+<div style="text-align:center">
+<span class="dot2" onclick="currentSlide(1)"></span>
+<span class="dot2" onclick="currentSlide(2)"></span>
+<span class="dot2" onclick="currentSlide(3)"></span>
+</div>
+
+<script src="javascriptfilHytter.js"></script>
+
+</div>
+</p>
 </div>
 </div>
 </div>
