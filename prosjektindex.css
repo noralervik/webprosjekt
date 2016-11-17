@@ -3,6 +3,12 @@
   column-count: 2;
 }
 
+.kolonner2{
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+}
+
 .altunder{
   font-family: Calibri, sans-serif;
   margin-left: 90px;
