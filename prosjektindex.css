@@ -264,7 +264,7 @@ div.img img {
 div.desc {
     padding: 25px;
 
-      font-size: 16px;
+      font-size: 18px;
 }
 
 *{
@@ -389,11 +389,8 @@ div.desc2 {
 }
 
 div.desc3 {
-  padding: 25px;
-    font-size: 26px;
-    padding: 5px;
-    text-align: center;
-    margin: auto;
+  padding: 5px;
+    font-size: 20px;
 }
 
 fieldset {
@@ -463,7 +460,7 @@ font-size: 15px;
 * {box-sizing:border-box}
 /* Slideshow container */
 .slideshow-container2 {
-  max-width: 800px;
+  max-width: 700px;
   position: relative;
   margin: auto;
 
