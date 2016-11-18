@@ -83,7 +83,6 @@ li {
 
 }
 
-
 li a, .dropbtn {
     display: block;
     color: white;
@@ -93,11 +92,14 @@ li a, .dropbtn {
 }
 
 li a:hover:not(.active) {
-    background-color: lightgrey;
+    background-color: green;
+    opacity: 0.5;
 }
 
 .active {
-    background-color: grey;
+background-color: green;
+    opacity: 0.5;
+
 }
 
 li.dropdown {
@@ -165,9 +167,7 @@ li.dropdown {
   transition: background-color 0.6s ease;
 }
 
-.active {
-  background-color: #717171;
-}
+
 
 /* Fading animation */
 .fade {
@@ -206,13 +206,14 @@ input[type=text], [type=email], select {
 /* tilbakemeldingsskjema */
 input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #206020;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 input[type=submit]:hover {
@@ -521,7 +522,7 @@ font-size: 15px;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover {
+ .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover {
   background-color: #717171;
 }
 
