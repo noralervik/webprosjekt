@@ -95,17 +95,23 @@ function hentHyttePris()
 
  function calculateDays()
  {
+   var today = new Date();
+   var dd = today.getDate();
+   var mm = today.getMonth()+1; //January is 0!
+   var yyyy = today.getFullYear();
 
    var divobj2 = document.getElementById('antall_dager');
    var ankomst = new Date(document.getElementById('ankomst').value);
    var avreise = new Date(document.getElementById('avreise').value);
-  
-
    var antall_Dager = avreise.getDate()-ankomst.getDate();
+
    divobj2.innerHTML = "Antall dager: " + antall_Dager + " dag/dager.";
 
    if (ankomst.getDate() > avreise.getDate()) {
      alert("Du kan ikke velge en avreisedato bak i tid.");
+   }
+   if (ankomst.getDate() < today.getDate()){
+     alert("Du kan ikke velge datoer lengere bak enn dagens dato.")
    }
  }
 
