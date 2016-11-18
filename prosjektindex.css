@@ -22,11 +22,10 @@ line-height: 30px;
 width: auto;
 margin: auto;
 width: 100%;
-font: 15px bold Calibri, Sans-Serif;
-
+font-family: Calibri, Sans-Serif;
 background-image: image(bilder/regler.jpeg);
-line-height: 30px;
-padding-top: 100px;
+line-height: 22px;
+padding-top: 50px;
 }
 
 
