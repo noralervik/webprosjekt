@@ -70,10 +70,10 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
     font-family: Calibri, sans-serif;
-        padding-top: 15px;
-        padding-bottom: 10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-image: url(bilder/banner.jpg);
 }
 
 li {
