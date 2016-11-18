@@ -70,10 +70,10 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #333;
     font-family: Calibri, sans-serif;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        background-image: url(bilder/banner.jpg);
+        padding-top: 15px;
+        padding-bottom: 10px;
 }
 
 li {
@@ -100,9 +100,9 @@ li a:hover:not(.active) {
     background-color: grey;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+/*li a:hover, .dropdown:hover .dropbtn {
     background-color: lightgrey;
-}
+}*/
 
 li.dropdown {
     display: inline-block;
@@ -124,7 +124,7 @@ li.dropdown {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #lightgrey;}
+/*.dropdown-content a:hover {background-color: #lightgrey;}*/
 .dropdown:hover .dropdown-content {
     display: block;
     background-color: white;
@@ -264,7 +264,7 @@ div.img img {
 div.desc {
     padding: 25px;
 
-      font-size: 18px;
+      font-size: 16px;
 }
 
 *{
@@ -370,7 +370,7 @@ table {
   }
 
 @media only screen and (max-width: 1920px){
-  .kontaktskjema, .tidtabell {
+  .ansatte, .tidtabell {
     width: 100%;
   }
 }
@@ -389,15 +389,18 @@ div.desc2 {
 }
 
 div.desc3 {
-  padding: 5px;
-    font-size: 20px;
+  padding: 25px;
+    font-size: 26px;
+    padding: 5px;
+    text-align: center;
+    margin: auto;
 }
 
 fieldset {
   border-color: white;
 }
 
-.kontaktskjema {
+.ansatte {
 font-family: Calibri, sans-serif;
 font-size: 15px;
 }
@@ -460,7 +463,7 @@ font-size: 15px;
 * {box-sizing:border-box}
 /* Slideshow container */
 .slideshow-container2 {
-  max-width: 700px;
+  max-width: 800px;
   position: relative;
   margin: auto;
 
