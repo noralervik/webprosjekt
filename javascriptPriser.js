@@ -61,17 +61,14 @@ function hentPrisVask()
 
 function hentEvtMedlem()
 {
-   var medlemPris=0;
+   var medlemPris=1;
    var theForm = document.forms["hyttene"];
    var medlem = theForm.elements["medlem"];
-   for(var i = 0; i < medlem.length; i++)
-   {
-       if(medlem[i].checked)
+   if(medlem.checked ==true)
        {
-           medlemPris = medlemTurisforening[medlem[i].value] * 0.15; //FÅR IKKE GANGET!!!
+           medlemPris = 0.85;
            //medlemPris = medlemTurisforening*totalPris
-           break;
-       }
+           }
    }
    return medlemPris;
 }
@@ -117,14 +114,15 @@ function hentHyttePris()
 
 function calculateTotal()
 {
+  //IKKE FERDIIIIIIIIG!!!!!!!
    //Here we get the total price by calling our function
    //Each function returns a number so by calling them we add the values they return together
-   var totalPris_utenDager = hentHyttePris() + hentEvtMedlem()+ hentPrisVask();
-   var totalPris = totalPris_utenDager * calculateDays();
+   var totalPris = (hentHyttePris() + hentPrisVask())* calculateDays();
    //Viser resultet
-   var divobj = document.getElementById('totalPris');
+   totalPris = totalPris * hentEvtMedlem();
+
    divobj.style.display='block';
-   divobj.innerHTML = "Prisen for hytten deres er: " + totalPris_utenDager + " kroner per natt." + totalPris;
+   divobj.innerHTML = "Prisen for hytten deres er: " + totalPris + " kroner per natt.";
 }
 
 function hideTotal()
