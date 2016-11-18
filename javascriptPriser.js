@@ -99,28 +99,32 @@ function hentHyttePris()
    var divobj2 = document.getElementById('antall_dager');
    var ankomst = new Date(document.getElementById('ankomst').value);
    var avreise = new Date(document.getElementById('avreise').value);
+  
 
-var antall_Dager = avreise.getDate()-ankomst.getDate();
+   var antall_Dager = avreise.getDate()-ankomst.getDate();
    divobj2.innerHTML = "Antall dager: " + antall_Dager + " dag/dager.";
+
+   if (ankomst.getDate() > avreise.getDate()) {
+     alert("Du kan ikke velge en avreisedato bak i tid.");
+   }
  }
 
 function calculateTotal()
 {
    //Here we get the total price by calling our function
    //Each function returns a number so by calling them we add the values they return together
-  // var totalPris = hentPrisVask() + hentHyttePris() + candlesPrice() + insciptionPrice() + hentEvtMedlem();
-   var totalPris = hentPrisVask() + hentHyttePris() + hentEvtMedlem();
+   var totalPris_utenDager = hentHyttePris() + hentEvtMedlem()+ hentPrisVask();
+   var totalPris = totalPris_utenDager * calculateDays();
    //Viser resultet
    var divobj = document.getElementById('totalPris');
    divobj.style.display='block';
-   divobj.innerHTML = "Den totale prisen for hytten deres er: " + totalPris + " kroner.";
-  // divobj.innerHTML = "Navn på reisende: " + ...
+   divobj.innerHTML = "Prisen for hytten deres er: " + totalPris_utenDager + " kroner per natt." + totalPris;
 }
 
 function hideTotal()
 {
    var divobj = document.getElementById('totalPris');
-   var divobj2 = document.getElementById('antall_dager');
    divobj2.style.display='none';
    divobj.style.display='none';
+   // NAVN PÅ REISENDE, EPOST ADRESSE....++
 }
