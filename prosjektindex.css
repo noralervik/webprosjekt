@@ -528,7 +528,7 @@ font-size: 15px;
 }
 
 /* Fading animation */
-.fade2, .fade3, .fada4, .fade5 {
+.fade2, .fade3, .fade4, .fade5 {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
