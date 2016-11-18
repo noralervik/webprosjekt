@@ -458,7 +458,7 @@ font-size: 15px;
 
 * {box-sizing:border-box}
 /* Slideshow container */
-.slideshow-container2 {
+.slideshow-container2, .slideshow-container3, .slideshow-container4, .slideshow-container5 {
   max-width: 800px;
   position: relative;
   margin: auto;
@@ -512,7 +512,7 @@ font-size: 15px;
 }
 
 /* The dots/bullets/indicators */
-.dot2 {
+.dot2, .dot3, .dot4, .dot5 {
   cursor:pointer;
   height: 13px;
   width: 13px;
@@ -522,16 +522,13 @@ font-size: 15px;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-ul.dotter { (override)
-  list-style-type:none;
-}
 
-.active, .dot2:hover {
+.active, .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover {
   background-color: #717171;
 }
 
 /* Fading animation */
-.fade2 {
+.fade2, .fade3, .fada4, .fade5 {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
