@@ -1,26 +1,26 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex5 = 1;
+showSlides5(slideIndex5);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides5(n) {
+  showSlides5(slideIndex5 += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide5(n) {
+  showSlides5(slideIndex5 = n);
 }
 
-function showSlides(n) {
+function showSlides5(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides5");
   var dots = document.getElementsByClassName("dot5");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {slideIndex5 = 1}
+  if (n < 1) {slideIndex5 = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex5-1].style.display = "block";
+  dots[slideIndex5-1].className += " active";
 }
