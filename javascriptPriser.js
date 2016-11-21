@@ -102,13 +102,13 @@ function hentHyttePris()
    var divobj2 = document.getElementById('antall_dager');
    var ankomst = new Date(document.getElementById('ankomst').value);
    var avreise = new Date(document.getElementById('avreise').value);
-   var antall_Dager = (avreise.getTime() - ankomst.getTime())/86400000;
+   var antall_Dager = (avreise.getTime() - ankomst.getTime())/86400000; //må gange med dager, timer, minutter, sekunder, og millisekunder
 
    divobj2.innerHTML = "Antall dager: " + antall_Dager + " dag/dager.";
 
    if (ankomst.getTime() > avreise.getTime()) {
      alert("Du kan ikke velge en avreisedato bak i tid.");
-
+     divobj2.style.display = 'none'
    }
    if (ankomst.getTime() < today.getTime()){
      alert("Du kan ikke velge datoer lengere bak enn dagens dato.");
@@ -124,9 +124,10 @@ function calculateTotal()
    //Here we get the total price by calling our function
    //Each function returns a number so by calling them we add the values they return together
    var totalPris = hentHyttePris() + hentPrisVask();
+   var dager = calculateDays().getTime();
    // + hentEvtMedlem();
    //Viser resultet
-   totalPris = totalPris * hentEvtMedlem();
+   totalPris = totalPris * hentEvtMedlem() * dager;
    var divobj = document.getElementById('totalPris');
    divobj.style.display='block';
    divobj.innerHTML = "Prisen for hytten deres er: " + totalPris + " kroner per natt.";
