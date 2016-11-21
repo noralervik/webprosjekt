@@ -24,18 +24,16 @@ margin: auto;
 width: 100%;
 font-family: Calibri, Sans-Serif;
 background-image: image(bilder/regler.jpeg);
+line-height: 22px;
 padding-top: 50px;
 }
 
-.midtstilt {
-  text-align: center;
-}
+
 .altunder{
   font-family: Calibri, sans-serif;
   margin-left: 90px;
   margin-right: 90px;
   margin-bottom: 40px;
-  padding-top: 30px;
 }
 
 #logo-container img {
@@ -94,13 +92,14 @@ li a, .dropbtn {
 }
 
 li a:hover:not(.active) {
-    background-color: green;
-    opacity: 0.7;
+    background-color: lightgreen;
+    opacity: 0.5;
 }
 
 .active {
 background-color: green;
-opacity: 0.7;
+    opacity: 0.5;
+
 }
 
 li.dropdown {
