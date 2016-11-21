@@ -5,9 +5,7 @@ var vask_pris = new Array();
 vask_pris["Ja"]=400;
 vask_pris["Nei"]=0;
 
-var medlemTurisforening = new Array();
-medlemTurisforening["Ja"] = 0.15;
-medlemTurisforening["Nei"] = 0;
+
 
 //Set up an associative array
 //The keys represent the filling type
@@ -58,10 +56,16 @@ function hentPrisVask()
    //We return the prisVask
    return prisVask;
 }
-/*
+
 function hentEvtMedlem()
 {
+
    var medlemPris=1;
+   var radios = document.getElementsByName('medlem');
+   if(radios[1].checked) {
+     medlemPris = 0.85;
+   }
+   /*
    var theForm = document.forms["hyttene"];
    var medlem = theForm.elements["medlem"];
    if(medlem.checked == true)
@@ -69,9 +73,9 @@ function hentEvtMedlem()
            medlemPris = 0.85;
            //medlemPris = medlemTurisforening*totalPris
            }
-   }
+   } */
    return medlemPris;
-}  */
+}
 //This function finds the filling price based on the
 //drop down selection
 function hentHyttePris()
@@ -98,14 +102,15 @@ function hentHyttePris()
    var divobj2 = document.getElementById('antall_dager');
    var ankomst = new Date(document.getElementById('ankomst').value);
    var avreise = new Date(document.getElementById('avreise').value);
-   var antall_Dager = avreise.getDate() - ankomst.getDate();
+   var antall_Dager = (avreise.getTime() - ankomst.getTime())/86400000;
 
    divobj2.innerHTML = "Antall dager: " + antall_Dager + " dag/dager.";
 
-   if (ankomst.getDate() > avreise.getDate()) {
+   if (ankomst.getTime() > avreise.getTime()) {
      alert("Du kan ikke velge en avreisedato bak i tid.");
+
    }
-   if (ankomst.getDate() < today.getDate()){
+   if (ankomst.getTime() < today.getTime()){
      alert("Du kan ikke velge datoer lengere bak enn dagens dato.");
    }
    /*if (ankomst.getDate() = avreise.getDate()){
@@ -121,7 +126,7 @@ function calculateTotal()
    var totalPris = hentHyttePris() + hentPrisVask();
    // + hentEvtMedlem();
    //Viser resultet
-   //totalPris = totalPris * hentEvtMedlem();
+   totalPris = totalPris * hentEvtMedlem();
    var divobj = document.getElementById('totalPris');
    divobj.style.display='block';
    divobj.innerHTML = "Prisen for hytten deres er: " + totalPris + " kroner per natt.";
