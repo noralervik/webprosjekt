@@ -27,7 +27,9 @@ background-image: image(bilder/regler.jpeg);
 padding-top: 50px;
 }
 
-
+.midtstilt {
+  text-align: center;
+}
 .altunder{
   font-family: Calibri, sans-serif;
   margin-left: 90px;
