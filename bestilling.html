@@ -78,7 +78,7 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
 <title>Hytteutleie</title>
 <!--- END TITTEL --->
 <!--- § 1.4 IKON OG STYLESHEET --->
-<link rel="icon" href="bilder/favicon.ico" type="favicon.ico">
+<link rel="icon" href="bilder/favicon.png">
 <link rel="stylesheet" href="prosjektindex.css"/>
 <!--- END IKON OG STYLESHEET --->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -92,7 +92,7 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
       <!--- § 1.7 UNORDERED LIST --->
     <ul>
         <!--- § 1.8 FORSIDE(INDEX) --->
-        <a href="prosjektindex.html"><img src="bilder/logo6.png" width="400px"></a>
+        <a href="prosjektindex.html"><img src="bilder/logo7.png" width="300px"></a>
           <!--- END FORSIDE(INDEX) --->
 
       <!--- § 1.9 MENY --->
@@ -118,6 +118,7 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
 
 <div class="altunder">
 <!--- § 1.10 BESTILLINGSSKJEMA - FORM --->
+<div class="kolonner2">
 <form action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php" id="hyttene" onsubmit="return false;">
   <!-- <fieldset> -->
   <h1>Bestill hytteopphold</h1>
@@ -196,13 +197,49 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
 <script src="javascriptPriser.js"></script>
 <!--- END JAVASCRIPT --->
   <textarea>Eventuelle kommentarer...</textarea>
+
       <input type="submit" value="Send inn">
+      <br><br><br><br>
+
+<div class="midtstilt">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $("img").bind("mouseover", function() {
+      $(this).css("opacity", "1");
+    });
+    $("img").bind("mouseout", function() {
+      $("img").css("opacity", "0.5");
+    });
+  });
+  </script>
+
+            <img src="bilder/fjell3.JPEG" width="250px">
+      <img src="bilder/fjellutsikt.JPEG" width="250px">
+          <img src="bilder/sjo3.JPG" width="250px">
+            <img src="bilder/skog1.JPG" width="250px">
+          <img src="bilder/fjell1.JPEG" width="150px">
+              <img src="bilder/sjo2.JPEG" width="150px">
+              <img src="bilder/sjo4.JPEG" width="150px">
+            <img src="bilder/fjell2.JPEG" width="250px">
+      <img src="bilder/sjoutsikt.JPEG" width="250px">
+            <img src="bilder/sjo1.JPEG" width="250px">
+      <img src="bilder/fjell4.JPEG" width="250px">
+
+      <script src="http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Trondheim/ekstern_boks_tre_dager.js">
+      </script><noscript><a href="http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Trondheim/">yr.no: Værvarsel for Trondheim</a></noscript>
+    </div>
 </div>
 <!--- END BESTILLINGSSKJEMA --->
+
 </form>
 <!--- END BESTILLINGSSKJEMA - FORM --->
+
 </div>
 
+  </div>
 <!--- § 2.6 FOOTER --->
 <footer>Copyright © Drømmehytta <br>
 Har du spørsmål? ✉ Send oss en <a href="mailto:regine_bk@example.com">epost!</a>
