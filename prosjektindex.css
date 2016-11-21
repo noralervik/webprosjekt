@@ -1,6 +1,6 @@
 .kolonner{
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
- column-count: 2;
+-webkit-column-count: 2; /* Chrome, Safari, Opera */
+column-count: 2;
 width: auto;
 margin: auto;
 width: 100%;
@@ -34,6 +34,7 @@ padding-top: 50px;
   margin-left: 90px;
   margin-right: 90px;
   margin-bottom: 40px;
+  line-height: 22px;
 }
 
 #logo-container img {
