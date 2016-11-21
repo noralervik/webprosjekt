@@ -126,20 +126,20 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
   <!--- § 2.0 BESTILLINGSSKJEMA --->
   <div id="skjema">
       <label for="fname">Fornavn *</label>
-      <input type="text" id="fname" name="firstname" required = "">
+      <input type="text" id="fname" name="firstname" required = "" onchange="calculateTotal()">
   <br>
       <label for="lname">Etternavn *</label>
-      <input type="text" id="lname" name="lastname" required = "">
+      <input type="text" id="lname" name="lastname" required = ""  onchange="calculateTotal()">
   <br>
   <label for="mail">E-post *</label>
-    <input type="email" id="lname" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required = "">
+    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required = ""  onchange="calculateTotal()">
         <br>
         <label for="tlf">Telefonnummer *</label>
-          <input type="text" id="tel" name="telefon" pattern="[0-9]{8}" required = "" >
+          <input type="text" id="tel" name="telefon" pattern="[0-9]{8}" required = "" onchange ="calculateTotal()">
   </div>
 <!--- § 2.1 HYTTETYPER --->
     <label >Hyttetyper</label> <br>
-    <select id="hytteTypes" name='hytteTypes' onchange="calculateTotal()">
+    <select id="hytteTypes" name="hytteTypes" onchange="calculateTotal()">
     <option value="None">Velg hytte</option>
     <option value="Sjøhytte1">Gopithahytta - 1200 kr</option>
     <option value="Sjøhytte2">Norahytta - 1400 kr</option>
@@ -185,20 +185,6 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
 
 <br></br>
 <!--- END REISELENGDE --->
-
-  <!--  <p>
-    <label for='includecandles' class="inlinelabel"> Include Candles($5)</label>
-    <input type="checkbox" id="includecandles" name='includecandles' onclick="calculateTotal()" /><br>
-   </p>
-
-    <p>
-    <label class="inlinelabel" for='includeinscription'> Include Inscription($20)</label>
-    <input type="checkbox" id="includeinscription" name="includeinscription" onclick="calculateTotal()" />
-    <input type="text"  id="theinscription" name="theinscription" value="Enter Inscription"  /><br>
-    </p>
-
-    <!- Include candles <input type="checkbox" id="includecandles" /><br>
-    Quantity <input type="text"  name="quantity" id="quantity" /><br> -->
 
 <!--- § 2.4 TOTALPRIS --->
   <b>  <div id="totalPris"></div> </b><br>
