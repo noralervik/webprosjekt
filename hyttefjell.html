@@ -1,44 +1,195 @@
-<!DOCTYPE html>
 <!---****INNHOLDSFORTEGNELSE FOR KODEBRUK****
-§ 1.1 -
+§ 1.0 - HTML
+DOCTYPE HTML brukes som god skikk for webutvikling og hver HTML fil skal starte med dette.
 
-§ 1.2 -
+§ 1.1 - HTML/LANGUAGE
+Vi setter her språket på siden vår til Norge/norsk (lang="no").
+HTML kodingen starter også her.
 
-§ 1.3 -
+§ 1.2 - HEADER
+Her starter Headeren vår. Header består av logo øverst til venstre, navigasjonsbar/menyliste øverst til høyre. Headeren er som etter navnet;
+hodet - altså øverst på siden.
 
-§ 1.4 -
+§ 1.3 - TITTEL
+Tittelen er selve tittelen på siden brukeren blir møtt med. Vi har ulik tittel for hver side, og til denne spesifikke siden
+er tittelen "Drømmehytta - Fjellhytter".
 
-§ 1.5 -
+§ 1.4 - IKON OG STYLESHEET
+Ikonet er bildet du ser på selve tab-baren i nettleseren. Denne skal være en indikator for hvilken side du er på, slik at du enkelt ser det blant mange faner.
+Stylesheet er stilarket vi har brukt på siden, og denne er linket til CSS-filen vår. Stylesheeten sørger for visuell utforming og selve designet.
 
-§ 1.6 -
 
-§ 1.7 -
+§ 1.5 - BODY
+Body er selve "Kroppen" til HTML filen vår til bestillingssiden. Her ligger selve hovedinnholdet på siden.
 
-§ 1.8 -
 
-§ 1.9 -
+§ 1.6 - FORM
+Form er selve utformingen til skjemaet og definerer antall felt fra CSS filen.
 
-§ 1.10 -
 
-§ 2.0 -
+§ 1.7 - FORSIDEINDEX
+Trykker du direkte på logoen oppe til venstre side (Drømmehytta) vil du komme tilbake til hovedsiden vår/startsiden.
+Denne logoen er linket til forsiden direkte med en hyperlink bak bildet.
+
+
+§ 1.8 - MENY
+Menyen vår består av de ulike HTML sidene vi har generert til nettsiden. Hver av disse valgene har sin spesifikke HTML og CSS koding til siden.
+Den består av en bestillingsknapp, hjemknapp, hytteknapp med dropdown-content og en kontaktknapp.
+
+
+§ 1.9 - ALTUNDER
+All tekst og bilde mellom header og footer.
+
+
+§ 1.10 - VÅRE FJELLHYTTER
+Overskriften på "hyttefjell.html" siden. Under her vises bildene for de ulike hyttevalgene vi tilbyr.
+Under her ligger også all HTML, CSS og JavaScriptkodingen for denne siden.
+
+§ 2.0 - VASSFJELLHYTTA
+Vassfjellhytta er den første hytta brukeren møter på siden av tilbudene til "Fjellhytter".
+
+§ 2.1 - VASSFJELLHYTTA MODAL
+Modalen er et plugin som fungerer som en dialog box/popup vindu når brukeren klikker på knappen under bildet (i dette tilfellet er knappen under "Vassfjellhytta").
+
+
+§ 2.2 - VASSFJELLHYTTA INFORMASJON
+Dersom brukeren klikker på "Informasjon" knappen under bildet, vil modalen åpnes.
+Her har vi lagt inn litt tekst for å beskrive selve hytten, området rundt hytten og hvilke aktivitetsmuligheter som finnes.
+Prisen per døgn ligger også innlagt her.
+
+
+§ 2.3 - VASSFJELLHYTTA BESTILLING
+Ønsker brukeren å bestille, gjøres dette via en bestillingsknapp som er lagt inn på modalen.
+Bestillingsknappen fører brukeren direkte til vårt bestillingsskjema (bestilling.html) hvor h*n må fylle ut nødvendig informasjon.
+
+§ 2.4 - VASSFJELLHYTTA FASILITETER
+Under informasjon har vi lagt inn selve beskrivelsen av hytta. Her ligger størrelsen (Kvm), antall soverom, sengeplasser og så videre.
+Vi har også lagt inn hvilke fasiliteter hytta har (vaskemaskin, boblebad, Wi-Fi) slik at ikke brukeren forventer noe vi ikke tilbyr til den spesifikke hytta.
+
+
+§ 2.5 - VASSFJELLHYTTA SLIDESHOW
+Slideshowet viser fram hytta utvendig og innvendig for å interessere brukeren mer og gi et innblikk i hvordan den faktisk ser ut utseendemessig.
+Slideshowet er automatisk, slik at brukeren ikke behøver å klikke seg fram/tilbake på bildene (men det er også en mulighet for å gjøre dette ved å navigere ved bruk av pilene på venstre og høyre side av slideshowet).
+
+
+§ 2.6 - VASSFJELLHYTTA JAVASCRIPT
+Javascriptet er det som driver slideshowet. Vi har lagt inn JavaScript til hvert enkelt slideshow, og i dette tilfellet (ettersom dette er hytte #1 på "Hyttefjell.html") kalles denne javasacripthytter.js.
+
+
+§ 2.7 - GRÅKALLHYTTA
+"Gråkallhytta" er den andre hytta brukeren møter på siden av tilbudene til "Fjellhytter".
+
+
+§ 2.8 - GRÅKALLHYTTA MODAL
+Modalen er et plugin som fungerer som en dialog box/popup vindu når brukeren klikker på knappen under bildet (i dette tilfellet er knappen under "Gråkallhytta").
+
+
+§ 2.9 - GRÅKALLHYTTA INFORMASJON
+Dersom brukeren klikker på "Informasjon" knappen under bildet, vil modalen åpnes.
+Her har vi lagt inn litt tekst for å beskrive selve hytten, området rundt hytten og hvilke aktivitetsmuligheter som finnes.
+Prisen per døgn ligger også innlagt her.
+
+
+§ 2.10 - GRÅKALLHYTTA BESTILLING
+Ønsker brukeren å bestille, gjøres dette via en bestillingsknapp som er lagt inn på modalen.
+Bestillingsknappen fører brukeren direkte til vårt bestillingsskjema (bestilling.html) hvor h*n må fylle ut nødvendig informasjon.
+
+
+§ 3.0 - GRÅKALLHYTTA FASILITETER
+Under informasjon har vi lagt inn selve beskrivelsen av hytta. Her ligger størrelsen (Kvm), antall soverom, sengeplasser og så videre.
+Vi har også lagt inn hvilke fasiliteter hytta har (vaskemaskin, boblebad, Wi-Fi) slik at ikke brukeren forventer noe vi ikke tilbyr til den spesifikke hytta.
+
+
+§ 3.1 - STORHEIHYTTA
+"Storheihytta" er den tredje hytta brukeren møter på siden av tilbudene til "Fjellhytter".
+
+
+§ 3.2 - STORHEIHYTTA MODAL
+Modalen er et plugin som fungerer som en dialog box/popup vindu når brukeren klikker på knappen under bildet (i dette tilfellet er knappen under "Storheihytta").
+
+
+§ 3.3 - STORHEIHYTTA INFORMASJON
+Dersom brukeren klikker på "Informasjon" knappen under bildet, vil modalen åpnes.
+Her har vi lagt inn litt tekst for å beskrive selve hytten, området rundt hytten og hvilke aktivitetsmuligheter som finnes.
+Prisen per døgn ligger også innlagt her.
+
+
+§ 3.4 - STORHEIHYTTA BESTILLING
+Ønsker brukeren å bestille, gjøres dette via en bestillingsknapp som er lagt inn på modalen.
+Bestillingsknappen fører brukeren direkte til vårt bestillingsskjema (bestilling.html) hvor h*n må fylle ut nødvendig informasjon.
+
+
+§ 3.5 - STADSHEIHYTTA FASILITETER
+Under informasjon har vi lagt inn selve beskrivelsen av hytta. Her ligger størrelsen (Kvm), antall soverom, sengeplasser og så videre.
+Vi har også lagt inn hvilke fasiliteter hytta har (vaskemaskin, boblebad, Wi-Fi) slik at ikke brukeren forventer noe vi ikke tilbyr til den spesifikke hytta.
+
+
+§ 3.6 - STADSHEIHYTTA
+"Stadsheihytta" er den fjerde hytta brukeren møter på siden av tilbudene til "Fjellhytter".
+
+
+§ 3.7 - STADSHEIHYTTA MODAL
+Modalen er et plugin som fungerer som en dialog box/popup vindu når brukeren klikker på knappen under bildet (i dette tilfellet er knappen under "Stadsheihytta").
+
+
+§ 3.8 - STADSHEIHYTTA INFORMASJON
+Dersom brukeren klikker på "Informasjon" knappen under bildet, vil modalen åpnes.
+Her har vi lagt inn litt tekst for å beskrive selve hytten, området rundt hytten og hvilke aktivitetsmuligheter som finnes.
+Prisen per døgn ligger også innlagt her.
+
+
+§ 3.9 - STADSHEIHYTTA BESTILLING
+Ønsker brukeren å bestille, gjøres dette via en bestillingsknapp som er lagt inn på modalen.
+Bestillingsknappen fører brukeren direkte til vårt bestillingsskjema (bestilling.html) hvor h*n må fylle ut nødvendig informasjon.
+
+
+
+§ 3.10 - STADSHEIHYTTA FASILITETER
+Under informasjon har vi lagt inn selve beskrivelsen av hytta. Her ligger størrelsen (Kvm), antall soverom, sengeplasser og så videre.
+Vi har også lagt inn hvilke fasiliteter hytta har (vaskemaskin, boblebad, Wi-Fi) slik at ikke brukeren forventer noe vi ikke tilbyr til den spesifikke hytta.
+
+
+
+§ 4.0 -STADSHEIHYTTA JAVASCRIPT
+Javascriptet er det som driver slideshowet. Vi har lagt inn JavaScript til hvert enkelt slideshow, og i dette tilfellet (ettersom dette er hytte #4 på "Hyttefjell.html") kalles denne javascriptfil.js.
+
+
+
+§ 4.1 - FOOTER
+Footeren vår består av copyrighten vår til siden og en kontaktlink som fører til e-post dersom besøkende skulle ønske å ta kontakt med oss.
+Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært linket til våre sosiale medier (Facebook, Twitter osv).
+
 --->
+
+
+<!--- § 1.0 HTML --->
+<!DOCTYPE html>
+<!--- § 1.1 LANGUAGE --->
 <html lang="no">
+<!--- END HTML --->
+<!--- § 1.2 HEADER --->
 <head>
 <meta charset="utf-8">
+<!--- § 1.3 TITTEL --->
 <title>Drømmehytta - Fjellhytter</title>
+<!--- END TITTEL --->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--- § 1.4 IKON OG STYLESHEET --->
 <link rel="stylesheet"  href="prosjektindex.css">
 <link rel="icon" href="bilder/favicon.png">
+<!--- END IKON OG STYLESHEET --->
 </head>
+  <!--- END HEADER --->
+  <!--- § 1.5 BODY --->
 <body>
-  <!--<div id="logo-container"><a href="prosjektindex.html"><img src="bilder/header_forslag8.jpg" alt="" /></a></div>-->
+  <!--- § 1.6 FORM --->
   <form>
   <ul>
-      <!--- § 1.2 FORSIDEINDEX --->
+      <!--- § 1.7 FORSIDEINDEX --->
       <a href="prosjektindex.html"><img src="bilder/logo7.png" width="400px"></a>
         <!--- END FORSIDEINDEX --->
 
-    <!--- § 1.3 MENY --->
+    <!--- § 1.8 MENY --->
     <li><a href="omoss.html" class="dropbtn">Om oss</a>
               <li><a href="kontakt.html">Kontakt</a></li>
         <li><a href="bestilling.html">Bestilling</a></li>
@@ -46,34 +197,37 @@
         <a class="active" href="#" class="dropbtn">Hytter</a>
         <div class="dropdown-content">
           <a href="hyttesjo.html">Hytter ved sjøen</a>
-          <a class="active" href="hyttefjell.html">Hytter i fjellet</a>
+          <a class="active" href="hyttefjell.html">Hytter på fjellet</a>
           <a href="hytteskog.html">Hytter i skog og mark</a>
         </div>
   <li><a href="prosjektindex.html">Hjem</a></li>
         </div></li>
-    <!--<li style="float:right"><a href="omoss.html">Om oss</a></li>-->
-  <!--<input type="text" name="search" placeholder="Søk på siden.."></i>-->
   </ul>
   </form>
+  <!--- END FORM --->
 <!--- END MENY --->
 
+<!--- § 1.9 ALTUNDER --->
   <div class="altunder">
 
-
+<!--- § 1.10 VÅRE FJELLHYTTER --->
       <h1>Våre fjellhytter</h1>
-<!--Hytte nummer 1 -->
+
+<!--- § 2.0 VASSFJELLHYTTA --->
   <div class="responsive">
     <div class="img">
       <div class="desc2">Vassfjellhytta - Vassfjellet</div>
         <img src="bilder/fjell1.jpeg" alt="Fjellhytte" height="250">  </a>
       <button id="myBtn">Informasjon</button> <!-- Åpner modalen -->
+      <!--- § 2.1 VASSFJELLHYTTA MODAL --->
       <div id="myModal" class="modal">  <!-- The Modal -->
         <div class="modal-content"> <!-- Modal content -->
           <span class="close">×</span>
-
+<!--- § 2.2 VASSFJELLHYTTA INFORMASJON --->
           <h1>  Vassfjellhytta</h1>
             <div class="kolonner2">
               <div class="desc">
+
                 Stort og komfortabel hytte med idyllisk beliggenhet ved sjøen i Einvika, ca 4 km vest for tettstedet Lauvsnes.
                 Pen og barnevennlig naturtomt med god plass. Lekeplass. Unike muligheter for fotture langs sjøen. Flotte sandstrender med bademuligheter.
                 Kjent som Norges største havørnområde. <br>
@@ -84,10 +238,12 @@
 <br>
 <b>Pris for hytte: kr 1200,- /døgn</b>
 <br>
+<!--- § 2.3 VASSFJELLHYTTA BESTILLING --->
   <button class="button button4"><a href="bestilling.html">Bestill Vassfjellhytta</a></button>
+<!--- END VASSFJELLHYTTA BESTILLING --->
   <br>
   <br>
-
+<!--- § 2.4 VASSFJELLHYTTA FASILITETER --->
                   <b>Størrelse</b>: 252 kvadratmeter <br>
                   <b>Soverom:</b> 7 <br>
                   <b>Bad:</b> 2 <br>
@@ -101,10 +257,12 @@
                   <span>&#10004;</span> Boblebad <br>
                   <span>&#10008;</span> Husdyr tillatt <br>
           </div>
+          <!--- END VASSFJELLHYTTA INFORMASJON --->
         </div>
         <hr>
         <br>
-
+<!--- END VASSFJELLHYTTA FASILITETER --->
+<!--- § 2.5 VASSFJELLHYTTA SLIDESHOW --->
 <div class="slideshow-container2">
 <div class="mySlides2 fade2">
   <div class="numbertext">1 / 3</div>
@@ -135,25 +293,32 @@
 <span class="dot2" onclick="currentSlide(3)"></span>
 </div>
 
+<!--- § 2.6 VASSFJELLHYTTA JAVASCRIPT --->
 <script src="javascriptfilHytter.js"></script>
-
-</div>
-</div>
-</div>
-</div>
-</div>
+<!--- END VASSFJELLHYTTA JAVASCRIPT --->
 
 
+</div>
+<!--- END VASSFJELLHYTTA SLIDESHOW --->
+</div>
+</div>
+<!--- END VASSFJELLHYTTA MODAL --->
+</div>
+</div>
+<!--- END VASSFJELLHYTTA --->
+
+<!--- § 2.7 GRÅKALLHYTTA --->
   <div class="responsive">
     <div class="img">
       <div class="desc2">Gråkallhytta - Gråkallen</div>
         <img src="bilder/fjell2.jpeg" alt="Fjellhytte" height="250">
       </a>
+      <!--- § 2.8 GRÅKALLHYTTA MODAL --->
       <button id="myBtn2">Informasjon</button> <!-- Åpner modalen -->
       <div id="myModal2" class="modal">  <!-- The Modal -->
         <div class="modal-content"> <!-- Modal content -->
           <span class="close">×</span>
-
+<!--- § 2.9 GRÅKALLHYTTA INFORMASJON --->
           <h1>  Gråkallhytta</h1>
             <div class="kolonner2">
               <div class="desc">
@@ -167,10 +332,12 @@
 <br>
 <b>Pris for hytte: kr 1400,- /døgn</b>
 <br>
+<!--- § 2.10 GRÅKALLHYTTA BESTILLING --->
   <button class="button button4"><a href="bestilling.html">Bestill Gråkallhytta</a></button>
+  <!--- END GRÅKALLHYTTA BESTILLING --->
   <br>
   <br>
-
+<!--- § 3.0 GRÅKALLHYTTA FASILITETER --->
                   <b>Størrelse</b>: 252 kvadratmeter <br>
                   <b>Soverom:</b> 7 <br>
                   <b>Bad:</b> 2 <br>
@@ -185,18 +352,23 @@
                   <span>&#10004;</span> Husdyr tillatt <br>
           </div>
         </div>
+        <!--- END GRÅKALLHYTTA INFORMASJON --->
+        <!--- END GRÅKALLHYTTA FASILITETER --->
         <hr>
         <br>
 </div>
 </div>
+<!--- END GRÅKALLHYTTA MODAL --->
 </div>
 </div>
+<!--- END GRÅKALLHYTTA -->
 
+<!--- § 3.1 STORHEIHYTTA --->
   <div class="responsive">
     <div class="img">
       <div class="desc2">Storheihytta - Storheia</div>
         <img src="bilder/fjell3.jpeg" alt="Fjellhytte" height="250">
-      </a>
+      <!--- § 3.2 STORHEIHYTTA MODAL --->
       <button id="myBtn3">Informasjon</button> <!-- Åpner modalen -->
       <div id="myModal3" class="modal">  <!-- The Modal -->
         <div class="modal-content"> <!-- Modal content -->
@@ -205,6 +377,7 @@
           <h1>  Storheihytta</h1>
             <div class="kolonner2">
               <div class="desc">
+                <!--- § 3.3 STORHEIHYTTA INFORMASJON --->
                 Stort og komfortabel hytte med idyllisk beliggenhet ved sjøen i Einvika, ca 4 km vest for tettstedet Lauvsnes.
                 Pen og barnevennlig naturtomt med god plass. Lekeplass. Unike muligheter for fotture langs sjøen. Flotte sandstrender med bademuligheter.
                 Kjent som Norges største havørnområde. <br>
@@ -215,10 +388,12 @@
 <br>
 <b>Pris for hytte: kr 1600,- /døgn</b>
 <br>
+<!--- § 3.4 STORHEIHYTTA BESTILLING --->
   <button class="button button4"><a href="bestilling.html">Bestill Storheihytta</a></button>
+  <!--- END STORHEIHYTTA BESTILLING --->
   <br>
   <br>
-
+<!--- § 3.5 STORHEIHYTTA FASILITETER --->
                   <b>Størrelse</b>: 252 kvadratmeter <br>
                   <b>Soverom:</b> 7 <br>
                   <b>Bad:</b> 2 <br>
@@ -231,20 +406,26 @@
                   <span>&#10004;</span> TV og DVD-spiller <br>
                   <span>&#10008;</span> Boblebad <br>
                   <span>&#10004;</span> Husdyr tillatt <br>
+                  <!--- END STORHEIHYTTA FASILITETER -->
           </div>
         </div>
         <hr>
         <br>
 </div>
 </div>
+<!--- END STORHEIHYTTA MODAL --->
+<!--- END STORHEIHYTTA INFORMASJON --->
 </div>
 </div>
+<!--- END STORHEIHYTTA --->
 
+<!--- § 3.6 STADSHEIHYTTA --->
   <div class="responsive">
     <div class="img">
       <div class="desc2">Stadsheihytta - Stadsheia</div>
         <img src="bilder/fjell4.jpeg" alt="Fjellhytte" height="250">
       </a>
+      <!--- § 3.7 STADSHEIHYTTA MODAL --->
       <button id="myBtn4">Informasjon</button> <!-- Åpner modalen -->
       <div id="myModal4" class="modal">  <!-- The Modal -->
         <div class="modal-content"> <!-- Modal content -->
@@ -253,6 +434,7 @@
           <h1>  Stadsheihytta</h1>
             <div class="kolonner2">
               <div class="desc">
+                <!--- § 3.8 STADSHEIHYTTA INFORMASJON --->
                 Stort og komfortabel hytte med idyllisk beliggenhet ved sjøen i Einvika, ca 4 km vest for tettstedet Lauvsnes.
                 Pen og barnevennlig naturtomt med god plass. Lekeplass. Unike muligheter for fotture langs sjøen. Flotte sandstrender med bademuligheter.
                 Kjent som Norges største havørnområde. <br>
@@ -263,10 +445,12 @@
 <br>
 <b>Pris for hytte: kr 2000,- /døgn</b>
 <br>
+<!--- § 3.9 STADSHEIHYTTA BESTILLING --->
   <button class="button button4"><a href="bestilling.html">Bestill Stadsheihytta</a></button>
+  <!--- END STADSHEIHYTTA BESTILLING --->
   <br>
   <br>
-
+<!--- § 3.10 STADSHEIHYTTA FASILITETER --->
                   <b>Størrelse</b>: 252 kvadratmeter <br>
                   <b>Soverom:</b> 7 <br>
                   <b>Bad:</b> 2 <br>
@@ -279,23 +463,35 @@
                   <span>&#10004;</span> TV og DVD-spiller <br>
                   <span>&#10004;</span> Boblebad <br>
                   <span>&#10004;</span> Husdyr tillatt <br>
+                  <!--- END STADSHEIHYTTA FASILITETER --->
           </div>
         </div>
+        <!--- END STADSHEIHYTTA INFORMASJON --->
         <hr>
         <br>
 </div>
 </div>
+<!--- END MODAL STADSHEIHYTTA --->
 </div>
 </div>
+<!--- END STADSHEIHYTTA --->
 
   <div class="clearfix"></div>
+  <!--- § 4.0 STADSHEIHYTTA JAVASCRIPT --->
   <script src="javascriptfil.js"></script>
+  <!--- END STADSHEIHYTTA JAVASCRIPT --->
 
+<!--- END VÅRE FJELLHYTTER --->
 </div>
+<!--- END ALTUNDER --->
+<!--- § 4.1 FOOTER --->
 <footer>Copyright © HytterForLife
   <p>Har du spørsmål? Send oss en <a href="mailto:regine_bk@example.com">epost!</a><br></p>  </footer>
+  <!--- END FOOTER --->
 
 
 
 </body>
+<!--- END BODY --->
 </html>
+<!--- END HTML/LANGUAGE --->

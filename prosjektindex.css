@@ -92,7 +92,7 @@ li a, .dropbtn {
 }
 
 li a:hover:not(.active) {
-    background-color: green;
+    background-color: lightgreen;
     opacity: 0.5;
 }
 
