@@ -53,6 +53,7 @@ Javascriptfilen er filen som gjør det mulig for oss å legge inn selve Twitterk
 
 § 2.4 - FOOTER
 Footeren vår består av copyrighten vår til siden og en kontaktlink som fører til e-post dersom besøkende skulle ønske å ta kontakt med oss.
+Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært linket til våre sosiale medier (Facebook, Twitter osv).
 --->
 
 <!--- § 1.0 HTML --->
@@ -94,7 +95,7 @@ Footeren vår består av copyrighten vår til siden og en kontaktlink som fører
         <a href="#" class="dropbtn">Hytter</a>
         <div class="dropdown-content">
           <a href="hyttesjo.html">Hytter ved sjøen</a>
-          <a href="hyttefjell.html">Hytter i fjellet</a>
+          <a href="hyttefjell.html">Hytter på fjellet</a>
           <a href="hytteskog.html">Hytter i skog og mark</a>
         </div>
   <li><a href="prosjektindex.html">Hjem</a></li>
@@ -109,7 +110,7 @@ Footeren vår består av copyrighten vår til siden og en kontaktlink som fører
 <div class="altunder">
 
   <!--- § 2.0 KOLONNER --->
-  <div class="kolonner3">
+  <div class="kolonner2">
     <h1>Kontakt oss</h1>
   <p>* Må fylles ut</p>
 <h3>Send oss gjerne tilbakemelding</h3>
@@ -118,7 +119,7 @@ Forventet svarstid er innen to timer.</p>
 
 <!--- § 2.1 SKJEMA --->
 <div id="skjema">
-  <form action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php">
+  <form action="action_page.php">
     <label for="fname">Fornavn *</label>
     <input type="text" id="fname" name="firstname" required = "">
 <br>
@@ -139,8 +140,6 @@ Forventet svarstid er innen to timer.</p>
 
 </div>
 <!--- END KOLONNER --->
-</div>
-<!--- END ALTUNDER --->
 <!--- § 2.3 JAVASCRIPT --->
 <script>
 !function(d,s,id)
@@ -150,7 +149,8 @@ if(!d.getElementById(id)){js=d.createElement(s);
   fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
   </script>
   <!--- END JAVASCRIPT --->
-
+</div>
+<!--- END ALTUNDER --->
 
 <!--- § 2.4 FOOTER --->
 <footer>Copyright © Drømmehytta <br>
