@@ -5,7 +5,9 @@ var vask_pris = new Array();
 vask_pris["Ja"]=400;
 vask_pris["Nei"]=0;
 
-
+var medlemTurisforening = new Array();
+medlemTurisforening["Ja"] = 0.15;
+medlemTurisforening["Nei"] = 0;
 
 //Set up an associative array
 //The keys represent the filling type
@@ -59,21 +61,15 @@ function hentPrisVask()
 
 function hentEvtMedlem()
 {
-
    var medlemPris=1;
-   var radios = document.getElementsByName('medlem');
-   if(radios[1].checked) {
-     medlemPris = 0.85;
-   }
-   /*
    var theForm = document.forms["hyttene"];
    var medlem = theForm.elements["medlem"];
-   if(medlem.checked == true)
+   if(medlem.checked ==true)
        {
            medlemPris = 0.85;
            //medlemPris = medlemTurisforening*totalPris
            }
-   } */
+   }
    return medlemPris;
 }
 //This function finds the filling price based on the
@@ -85,9 +81,11 @@ function hentHyttePris()
    var theForm = document.forms["hyttene"];
    //Get a reference to the select id="filling"
     var valgtHytte = theForm.elements["hytteTypes"];
+
    //set cakeFilling Price equal to value user chose
    //For example hytteTypes["Lemon".value] would be equal to 5
    hytteValgtPris = hytteTypes[valgtHytte.value];
+
    //finally we return hytteValgtPris
    return hytteValgtPris;
 }
@@ -96,57 +94,41 @@ function hentHyttePris()
  {
    var today = new Date();
    var dd = today.getDate();
-   var mm = today.getMonth()+1; //Januar er 0!
+   var mm = today.getMonth()+1; //January is 0!
    var yyyy = today.getFullYear();
 
    var divobj2 = document.getElementById('antall_dager');
    var ankomst = new Date(document.getElementById('ankomst').value);
    var avreise = new Date(document.getElementById('avreise').value);
-   var antall_Dager = (avreise.getTime() - ankomst.getTime())/86400000;
+   var antall_Dager = avreise.getDate()-ankomst.getDate();
 
    divobj2.innerHTML = "Antall dager: " + antall_Dager + " dag/dager.";
 
-   if (ankomst.getTime() > avreise.getTime()) {
+   if (ankomst.getDate() > avreise.getDate()) {
      alert("Du kan ikke velge en avreisedato bak i tid.");
-
    }
-   if (ankomst.getTime() < today.getTime()){
-     alert("Du kan ikke velge datoer lengere bak enn dagens dato.");
+   if (ankomst.getDate() < today.getDate()){
+     alert("Du kan ikke velge datoer lengere bak enn dagens dato.")
    }
-   /*if (ankomst.getDate() = avreise.getDate()){
-     antall_dager = "0"
-     alert("Du kan ikke velge samme dag på ankomst og avreise.");
-   }*/
  }
 
 function calculateTotal()
 {
+  //IKKE FERDIIIIIIIIG!!!!!!!
    //Here we get the total price by calling our function
    //Each function returns a number so by calling them we add the values they return together
-   var totalPris = hentHyttePris() + hentPrisVask();
-   // + hentEvtMedlem();
+   var totalPris = (hentHyttePris() + hentPrisVask())* calculateDays();
    //Viser resultet
    totalPris = totalPris * hentEvtMedlem();
-   var divobj = document.getElementById('totalPris');
+
    divobj.style.display='block';
    divobj.innerHTML = "Prisen for hytten deres er: " + totalPris + " kroner per natt.";
-/*
-   var fornavn = document.getElementById('fname');
-   var etternavn = document.getElementById('lname');
-   var epost = document.getElementById('email');
-   var divobjNavn;
-   var navn = fornavn + etternavn;
-   var divobjEpost;
-   divobjNavn.style.display = 'block';
-   divobjEpost.style.display = 'block';
-   divobjNavn = "Navn på deg som bestiller: " + navn + ".";
-   divobjEpost= "Eposten din er: " + epost; */
 }
 
 function hideTotal()
 {
+   var divobj = document.getElementById('totalPris');
    divobj2.style.display='none';
    divobj.style.display='none';
-  /* divobjNavn.style.display = 'none';
-   divobjEpost.style.display = 'none'; */
+   // NAVN PÅ REISENDE, EPOST ADRESSE....++
 }
