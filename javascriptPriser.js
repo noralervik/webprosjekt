@@ -61,17 +61,14 @@ function hentPrisVask()
 
 function hentEvtMedlem()
 {
-   var medlemPris=0;
+   var medlemPris=1;
    var theForm = document.forms["hyttene"];
    var medlem = theForm.elements["medlem"];
-   for(var i = 0; i < medlem.length; i++)
-   {
-       if(medlem[i].checked)
+   if(medlem.checked ==true)
        {
-           medlemPris = medlemTurisforening[medlem[i].value] * 0.15; //FÅR IKKE GANGET!!!
+           medlemPris = 0.85;
            //medlemPris = medlemTurisforening*totalPris
-           break;
-       }
+           }
    }
    return medlemPris;
 }
@@ -95,32 +92,43 @@ function hentHyttePris()
 
  function calculateDays()
  {
+   var today = new Date();
+   var dd = today.getDate();
+   var mm = today.getMonth()+1; //January is 0!
+   var yyyy = today.getFullYear();
 
    var divobj2 = document.getElementById('antall_dager');
    var ankomst = new Date(document.getElementById('ankomst').value);
    var avreise = new Date(document.getElementById('avreise').value);
+   var antall_Dager = avreise.getDate()-ankomst.getDate();
 
-var antall_Dager = avreise.getDate()-ankomst.getDate();
    divobj2.innerHTML = "Antall dager: " + antall_Dager + " dag/dager.";
+
+   if (ankomst.getDate() > avreise.getDate()) {
+     alert("Du kan ikke velge en avreisedato bak i tid.");
+   }
+   if (ankomst.getDate() < today.getDate()){
+     alert("Du kan ikke velge datoer lengere bak enn dagens dato.")
+   }
  }
 
 function calculateTotal()
 {
+  //IKKE FERDIIIIIIIIG!!!!!!!
    //Here we get the total price by calling our function
    //Each function returns a number so by calling them we add the values they return together
-  // var totalPris = hentPrisVask() + hentHyttePris() + candlesPrice() + insciptionPrice() + hentEvtMedlem();
-   var totalPris = hentPrisVask() + hentHyttePris() + hentEvtMedlem();
+   var totalPris = (hentHyttePris() + hentPrisVask())* calculateDays();
    //Viser resultet
-   var divobj = document.getElementById('totalPris');
+   totalPris = totalPris * hentEvtMedlem();
+
    divobj.style.display='block';
-   divobj.innerHTML = "Den totale prisen for hytten deres er: " + totalPris + " kroner.";
-  // divobj.innerHTML = "Navn på reisende: " + ...
+   divobj.innerHTML = "Prisen for hytten deres er: " + totalPris + " kroner per natt.";
 }
 
 function hideTotal()
 {
    var divobj = document.getElementById('totalPris');
-   var divobj2 = document.getElementById('antall_dager');
    divobj2.style.display='none';
    divobj.style.display='none';
+   // NAVN PÅ REISENDE, EPOST ADRESSE....++
 }
