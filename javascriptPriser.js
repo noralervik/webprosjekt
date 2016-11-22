@@ -6,7 +6,6 @@ vask_pris["Ja"]=400;
 vask_pris["Nei"]=0;
 
 
-
 //Set up an associative array
 //The keys represent the filling type
 //The value represents the cost of the filling i.e. Lemon filling is $5,Dobash filling is $9
@@ -65,15 +64,6 @@ function hentEvtMedlem()
    if(radios[1].checked) {
      medlemPris = 0.85;
    }
-   /*
-   var theForm = document.forms["hyttene"];
-   var medlem = theForm.elements["medlem"];
-   if(medlem.checked == true)
-       {
-           medlemPris = 0.85;
-           //medlemPris = medlemTurisforening*totalPris
-           }
-   } */
    return medlemPris;
 }
 //This function finds the filling price based on the
@@ -108,17 +98,16 @@ function hentHyttePris()
 
    if (ankomst.getTime() > avreise.getTime()) {
      alert("Du kan ikke velge en avreisedato bak i tid.");
-     divobj2.style.display = 'none'
+     divobj2.style.display = 'none';
    }
    if (ankomst.getTime() < today.getTime()){
      alert("Du kan ikke velge datoer lengere bak enn dagens dato.");
+     divobj2.style.display = 'none';
    }
-   /*if (ankomst.getDate() = avreise.getDate()){
-     antall_dager = "0"
-     alert("Du kan ikke velge samme dag på ankomst og avreise.");
-   }*/
- }
-
+   if (ankomst.getTime() < avreise.getTime()) {
+     divobj2.style.display = 'block';
+   }
+}
 function calculateTotal()
 {
    //Here we get the total price by calling our function
@@ -131,23 +120,11 @@ function calculateTotal()
    var divobj = document.getElementById('totalPris');
    divobj.style.display='block';
    divobj.innerHTML = "Prisen for hytten deres er: " + totalPris + " kroner per natt.";
-/*
-   var fornavn = document.getElementById('fname');
-   var etternavn = document.getElementById('lname');
-   var epost = document.getElementById('email');
-   var divobjNavn;
-   var navn = fornavn + etternavn;
-   var divobjEpost;
-   divobjNavn.style.display = 'block';
-   divobjEpost.style.display = 'block';
-   divobjNavn = "Navn på deg som bestiller: " + navn + ".";
-   divobjEpost= "Eposten din er: " + epost; */
+
 }
 
 function hideTotal()
 {
    divobj2.style.display='none';
    divobj.style.display='none';
-  /* divobjNavn.style.display = 'none';
-   divobjEpost.style.display = 'none'; */
 }

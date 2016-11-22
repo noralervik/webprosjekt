@@ -142,14 +142,17 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
     <label >Hyttetyper</label> <br>
     <select id="hytteTypes" name="hytteTypes" onchange="calculateTotal()">
     <option value="None">Velg hytte</option>
+    <option value="None">--------Sjøhyttene--------</option>
     <option value="Sjøhytte1">Gopithahytta - 1200 kr</option>
     <option value="Sjøhytte2">Norahytta - 1400 kr</option>
     <option value="Sjøhytte3">Reginehytta - 1600 kr</option>
     <option value="Sjøhytte4"> Vemundhytta- 2000 kr</option>
+    <option value="None">--------Fjellhyttene--------</option>
     <option value="Fjellhytte1">Vassfjellhytta - 1200 kr</option>
     <option value="Fjellhytte2">Gråkallhytta - 1400 kr</option>
     <option value="Fjellhytte3">Storheihytta - 1600 kr</option>
     <option value="Fjellhytte4">Stadsheihytta - 2000 kr</option>
+    <option value="None">--------Skogshyttene--------</option>
     <option value="Skogshytte1">Byneshytta - 1200 kr</option>
     <option value="Skogshytte2">Bratsberghytta - 1400 kr</option>
     <option value="Skogshytte3">Tanemhytta - 1600 kr</option>
@@ -162,8 +165,8 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
     <fieldset>
     <legend>Ønsker du vask av hytten? *</legend>
     Vask av hytten koster 400 kr. <br>
-    <input type="radio"  name="vask" value="Ja" onclick="calculateTotal()" />Ja<br>
-    <input type="radio"  name="vask" value="Nei" onclick="calculateTotal()" />Nei<br><br>
+    <input type="radio"  name="vask" value="Ja" onclick="calculateTotal()" required = "" />Ja<br>
+    <input type="radio"  name="vask" value="Nei" onclick="calculateTotal()" required = ""/>Nei<br><br>
     </fieldset>
     <!--- END HYTTEVASK --->
 
@@ -171,8 +174,8 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
     <fieldset>
     <legend>Er du medlem i Turistforeningen? *</legend>
     15% avslag for medlemmer. <br>
-    <input type="radio"  name="medlem" value="Nei" onclick="calculateTotal()" />Nei<br>
-    <input type="radio"  name="medlem" value="Ja" onclick="calculateTotal()" />Ja<br><br>
+    <input type="radio"  name="medlem" value="Nei" onclick="calculateTotal()" required = ""/>Nei<br>
+    <input type="radio"  name="medlem" value="Ja" onclick="calculateTotal()" required = ""/>Ja<br><br>
     </fieldset>
 <!--- END MEDLEMSRABATT --->
 
@@ -180,9 +183,9 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
     Velg reiselengde: *
     <br></br>
     <label for="ankomst">Ankomst:</label>
-    <input type="date" name="ankomst" id = "ankomst" required = "" onchange="calculateDays()">
+    <input type="date" name="ankomst" id="ankomst" required = "" onchange="calculateDays()">
     <label for="avreise">Avreise:</label>
-    <input type="date" name="avreise" id = "avreise" required = "" onchange="calculateDays()">
+    <input type="date" name="avreise" id="avreise" required = "" onchange="calculateDays()">
 
 <br></br>
 <!--- END REISELENGDE --->
