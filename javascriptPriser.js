@@ -25,6 +25,8 @@ hytteTypes["Skogshytte2"]=1400;
 hytteTypes["Skogshytte3"]=1600;
 hytteTypes["Skogshytte4"]=2000;
 
+
+
 // hentPrisVask() finds the price based on the size of the cake.
 // Here, we need to take user's the selection from radio button selection
 function hentPrisVask()
@@ -82,7 +84,7 @@ function hentHyttePris()
    return hytteValgtPris;
 }
 
- function calculateDays()
+function calculateDays()
  {
    var today = new Date();
    var dd = today.getDate();
@@ -113,14 +115,21 @@ function calculateTotal()
    //Here we get the total price by calling our function
    //Each function returns a number so by calling them we add the values they return together
 
-
    var totalPris = hentHyttePris() + hentPrisVask();
    //Viser resultet
    totalPris = totalPris * hentEvtMedlem();
+
    var divobj = document.getElementById('totalPris');
    divobj.style.display='block';
    divobj.innerHTML = "Prisen for hytten deres er: " + totalPris + " kroner per natt.";
-
+   /* Her ville vi egentlig ha en ekstra linje der det står:
+   totalPris = totalPris * calculateDays()
+   Men etter mye testkjøring har vi funnet ut at calculateDays()-funksjonen ikke blir registrert som en global funksjon
+   (den blir "undefined"). Vi har også testet at antall_Dager inni calculateDays-funksjonen er et "number", så i dette tilfellet
+   skulle det vært enkelt å bare gange dagene(calculateDays()) med totalprisen(totalPris). Dette går altså ikke,
+   og vi skjønner ikke hvorfor...?
+   Derfor valgte vi å gi kunden en pris per natt, og antall dager i et setning under.
+   */
 }
 
 function hideTotal()
