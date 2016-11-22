@@ -209,7 +209,7 @@ input[type=text], [type=email], select {
 /* tilbakemeldingsskjema */
 input[type=submit] {
     width: 100%;
-    background-color: #206020;
+    background-color: #45a049;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -220,7 +220,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color:#206020;
 }
 
 
@@ -342,7 +342,7 @@ div.desc {
 
 /* Bestillingsknapper*/
 .button {
-    background-color: green;
+    background-color: #45a049;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -356,7 +356,7 @@ div.desc {
 }
 
 .button:hover {
-    background-color: #45a049;
+    background-color: green;
     color: white;
   }
 
@@ -449,7 +449,7 @@ font-size: 15px;
 }
 
 #myBtn ,#myBtn2, #myBtn3, #myBtn4{
-  background-color: green;
+  background-color: #45a049;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -464,7 +464,7 @@ font-size: 15px;
 }
 
 #myBtn:hover, #myBtn2:hover, #myBtn3:hover, #myBtn4:hover {
-    background-color: #45a049;
+    background-color: green;
 }
 
 
