@@ -1,47 +1,197 @@
-<!DOCTYPE html>
 <!---****INNHOLDSFORTEGNELSE FOR KODEBRUK****
-§ 1.1 - HEADERLOGO
-Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlink).
+§ 1.0 HTML
+DOCTYPE HTML brukes som god skikk for webutvikling og hver HTML fil skal starte med dette.
 
-§ 1.2 -
 
-§ 1.3 -
+§ 1.1 - HTML/LANGUAGE
+Vi setter her språket på siden vår til Norge/norsk (lang="no").
+HTML kodingen starter også her.
 
-§ 1.4 -
 
-§ 1.5 -
+§ 1.2 - HEADER
+Her starter Headeren vår. Header består av logo øverst til venstre, navigasjonsbar/menyliste øverst til høyre. Headeren er som etter navnet;
+hodet - altså øverst på siden.
 
-§ 1.6 -
 
-§ 1.7 -
+§ 1.3 - TITTEL
+Tittelen er selve tittelen på siden brukeren blir møtt med. Vi har ulik tittel for hver side, og til denne spesifikke siden
+er tittelen "Drømmehytta - Sjøhytter".
 
-§ 1.8 -
 
-§ 1.9 -
+§ 1.4 - IKON OG STYLESHEET
+Ikonet er bildet du ser på selve tab-baren i nettleseren. Denne skal være en indikator for hvilken side du er på, slik at du enkelt ser det blant mange faner.
+Stylesheet er stilarket vi har brukt på siden, og denne er linket til CSS-filen vår. Stylesheeten sørger for visuell utforming og selve designet.
 
-§ 1.10 -
 
-§ 2.0 -
+§ 1.5 - BODY
+Body er selve "Kroppen" til HTML filen vår til bestillingssiden. Her ligger selve hovedinnholdet på siden.
+
+
+§ 1.6 - FORM
+Form er selve utformingen til skjemaet og definerer antall felt fra CSS filen.
+
+
+§ 1.7 - FORSIDEINDEX
+Trykker du direkte på logoen oppe til venstre side (Drømmehytta) vil du komme tilbake til hovedsiden vår/startsiden.
+Denne logoen er linket til forsiden direkte med en hyperlink bak bildet.
+
+
+§ 1.8 - MENY
+Menyen vår består av de ulike HTML sidene vi har generert til nettsiden. Hver av disse valgene har sin spesifikke HTML og CSS koding til siden.
+Den består av en bestillingsknapp, hjemknapp, hytteknapp med dropdown-content og en kontaktknapp.
+
+
+§ 1.9 - ALTUNDER
+All tekst og bilde mellom header og footer.
+
+
+§ 1.10 - VÅRE SJØHYTTER
+Overskriften på "hyttesjo.html" siden. Under her vises bildene for de ulike hyttevalgene vi tilbyr.
+Under her ligger også all HTML, CSS og JavaScriptkodingen for denne siden.
+
+
+§ 2.0 - GOPITHAHYTTA
+"Gopitahytta" er den første hytta brukeren møter på siden av tilbudene til "Sjøhytter".
+
+§ 2.1 GOPITAHYTTA MODAL
+Modalen er et plugin som fungerer som en dialog box/popup vindu når brukeren klikker på knappen under bildet (i dette tilfellet er knappen under "Vassfjellhytta").
+
+
+§ 2.2 GOPITHAHYTTA INFORMASJON
+Dersom brukeren klikker på "Informasjon" knappen under bildet, vil modalen åpnes.
+Her har vi lagt inn litt tekst for å beskrive selve hytten, området rundt hytten og hvilke aktivitetsmuligheter som finnes.
+Prisen per døgn ligger også innlagt her.
+
+§ 2.3 GOPITHAHYTTA BESTILLING
+Ønsker brukeren å bestille, gjøres dette via en bestillingsknapp som er lagt inn på modalen.
+Bestillingsknappen fører brukeren direkte til vårt bestillingsskjema (bestilling.html) hvor h*n må fylle ut nødvendig informasjon.
+
+
+§ 2.4 GOPITHAHYTTA FASILITETER
+Under informasjon har vi lagt inn selve beskrivelsen av hytta. Her ligger størrelsen (Kvm), antall soverom, sengeplasser og så videre.
+Vi har også lagt inn hvilke fasiliteter hytta har (vaskemaskin, boblebad, Wi-Fi) slik at ikke brukeren forventer noe vi ikke tilbyr til den spesifikke hytta.
+
+
+§ 2.5 GOPITHAHYTTA SLIDESHOW
+Slideshowet viser fram hytta utvendig og innvendig for å interessere brukeren mer og gi et innblikk i hvordan den faktisk ser ut utseendemessig.
+Slideshowet er automatisk, slik at brukeren ikke behøver å klikke seg fram/tilbake på bildene (men det er også en mulighet for å gjøre dette ved å navigere ved bruk av pilene på venstre og høyre side av slideshowet).
+
+
+§ 2.6 GOPITHAHYTTA JAVASCRIPT
+Javascriptet er det som driver slideshowet. Vi har lagt inn JavaScript til hvert enkelt slideshow, og i dette tilfellet (ettersom dette er hytte #1 på "Hyttefjell.html") kalles denne javasacripthytter.js.
+
+
+§ 2.7 NORAHYTTA
+"Norahytta" er den andre hytta brukeren møter på siden av tilbudene til "Fjellhytter".
+
+
+§ 2.8 NORAHYTTA MODAL
+Modalen er et plugin som fungerer som en dialog box/popup vindu når brukeren klikker på knappen under bildet (i dette tilfellet er knappen under "Gråkallhytta").
+
+
+§ 2.9 NORAHYTTA INFORMASJON
+Dersom brukeren klikker på "Informasjon" knappen under bildet, vil modalen åpnes.
+Her har vi lagt inn litt tekst for å beskrive selve hytten, området rundt hytten og hvilke aktivitetsmuligheter som finnes.
+Prisen per døgn ligger også innlagt her.
+
+
+§ 2.10C NORAHYTTA BESTILLING
+Ønsker brukeren å bestille, gjøres dette via en bestillingsknapp som er lagt inn på modalen.
+Bestillingsknappen fører brukeren direkte til vårt bestillingsskjema (bestilling.html) hvor h*n må fylle ut nødvendig informasjon.
+
+
+§ 3.0 NORAHYTTA FASILITETER
+Under informasjon har vi lagt inn selve beskrivelsen av hytta. Her ligger størrelsen (Kvm), antall soverom, sengeplasser og så videre.
+Vi har også lagt inn hvilke fasiliteter hytta har (vaskemaskin, boblebad, Wi-Fi) slik at ikke brukeren forventer noe vi ikke tilbyr til den spesifikke hytta.
+
+
+§ 3.1 REGINEHYTTA
+"Storheihytta" er den tredje hytta brukeren møter på siden av tilbudene til "Fjellhytter".
+
+
+§ 3.2 REGINEHYTTA MODAL
+Modalen er et plugin som fungerer som en dialog box/popup vindu når brukeren klikker på knappen under bildet (i dette tilfellet er knappen under "Storheihytta").
+
+
+§ 3.3 REGINEHYTTA INFORMASJOMN
+Dersom brukeren klikker på "Informasjon" knappen under bildet, vil modalen åpnes.
+Her har vi lagt inn litt tekst for å beskrive selve hytten, området rundt hytten og hvilke aktivitetsmuligheter som finnes.
+Prisen per døgn ligger også innlagt her.
+
+
+§ 3.4 REGINEHYTTA BESTILLING
+Ønsker brukeren å bestille, gjøres dette via en bestillingsknapp som er lagt inn på modalen.
+Bestillingsknappen fører brukeren direkte til vårt bestillingsskjema (bestilling.html) hvor h*n må fylle ut nødvendig informasjon.
+
+
+§ 3.5 REGINEHYTTA FASILITETER
+Under informasjon har vi lagt inn selve beskrivelsen av hytta. Her ligger størrelsen (Kvm), antall soverom, sengeplasser og så videre.
+Vi har også lagt inn hvilke fasiliteter hytta har (vaskemaskin, boblebad, Wi-Fi) slik at ikke brukeren forventer noe vi ikke tilbyr til den spesifikke hytta.
+
+
+§ 3.6 VEMUNDHYTTA
+"Stadsheihytta" er den fjerde hytta brukeren møter på siden av tilbudene til "Fjellhytter".
+
+
+§ 3.7 VEMUNDHYTTA MODAL
+Modalen er et plugin som fungerer som en dialog box/popup vindu når brukeren klikker på knappen under bildet (i dette tilfellet er knappen under "Stadsheihytta").
+
+
+§ 3.8 VEMUNDHYTTA INFORMASJON
+Dersom brukeren klikker på "Informasjon" knappen under bildet, vil modalen åpnes.
+Her har vi lagt inn litt tekst for å beskrive selve hytten, området rundt hytten og hvilke aktivitetsmuligheter som finnes.
+Prisen per døgn ligger også innlagt her.
+
+
+§ 3.9 VEMUNDHYTTA BESTILLING
+Ønsker brukeren å bestille, gjøres dette via en bestillingsknapp som er lagt inn på modalen.
+Bestillingsknappen fører brukeren direkte til vårt bestillingsskjema (bestilling.html) hvor h*n må fylle ut nødvendig informasjon.
+
+
+§ 3.10 VEMUNDHYTTA FASILITETER
+Under informasjon har vi lagt inn selve beskrivelsen av hytta. Her ligger størrelsen (Kvm), antall soverom, sengeplasser og så videre.
+Vi har også lagt inn hvilke fasiliteter hytta har (vaskemaskin, boblebad, Wi-Fi) slik at ikke brukeren forventer noe vi ikke tilbyr til den spesifikke hytta.
+
+
+§ 4.0VEMUNDHYTTA JAVASCRIPT
+Javascriptet er det som driver slideshowet. Vi har lagt inn JavaScript til hvert enkelt slideshow, og i dette tilfellet (ettersom dette er hytte #4 på "Hyttefjell.html") kalles denne javascriptfil.js.
+
+
+§ 4.1 FOOTER
+Footeren vår består av copyrighten vår til siden og en kontaktlink som fører til e-post dersom besøkende skulle ønske å ta kontakt med oss.
+Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært linket til våre sosiale medier (Facebook, Twitter osv).
+
+
 --->
-
+<!--- § 1.0 HTML --->
+<!DOCTYPE html>
+<!--- END HTML --->
+<!--- § 1.1 HTML/LANGUAGE --->
 <html lang="no">
+<!--- § 1.2 HEADER --->
 <head>
 <meta charset="utf-8">
+<!--- § 1.3 TITTEL --->
 <title>Drømmehytta - Sjøhytter</title>
+<!--- END TITTEL --->
 <link rel="stylesheet"  href="prosjektindex.css">
+<!--- § 1.4 IKON OG STYLESHEET --->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="bilder/favicon.png">
+<!--- END IKON OG STYLESHEET --->
 </head>
-
+<!--- END HEADER --->
+<!--- § 1.5 BODY --->
 <body>
   <!--<div id="logo-container"><a href="prosjektindex.html"><img src="bilder/header_forslag8.jpg" alt="" /></a></div>-->
+<!--- § 1.6 FORM --->
   <form>
   <ul>
-      <!--- § 1.2 FORSIDEINDEX --->
+      <!--- § 1.7 FORSIDEINDEX --->
       <a href="prosjektindex.html"><img src="bilder/logo7.png" width="300px"></a>
         <!--- END FORSIDEINDEX --->
 
-    <!--- § 1.3 MENY --->
+    <!--- § 1.8 MENY --->
     <li><a href="omoss.html" class="dropbtn">Om oss</a>
               <li><a href="kontakt.html">Kontakt</a></li>
         <li><a href="bestilling.html">Bestilling</a></li>
@@ -60,8 +210,9 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
   </form>
 <!--- END MENY --->
 
+<!--- § 1.9 ALTUNDER --->
 <div class="altunder">
-
+<!--- § 1.10 VÅRE SJØHYTTER --->
       <h1>Våre sjøhytter</h1>
       <p>Drømmehytta er spsialister på å gi den den rette opplevelsen og hyggen du trenger i hytten. På siden ser du noen
       av hyttene vi har å tilby. Det er litt forskjell på pris i forhold til størrelse og antall sengeplasser. Vi
@@ -69,11 +220,12 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
       for å oppleve vannet og sjøen. Vi har også hytter i skogen, og her er det enorme muligheter med turer.
       Både lange og korte turer, høyt og lavt. Fjellhyttene våre ligger litt høyere opp ei naturen og har en nydelig utsikt og skogen.</p>
       <br>
+      <!--- § 2.0 GOPITHAHYTTA --->
 <div class="responsive">
     <div class="img">
       <div class="desc3">Gopithahytta - Granåsen </div>
         <img src="bilder/sjo1.jpeg" alt="Gopithahytta" height="250px" width=auto></a>
-
+<!--- § 2.1 GOPITAHYTTA INFORMASJON --->
         <button id="myBtn">Informasjon</button> <!-- Åpner modalen -->
         <div id="myModal" class="modal">  <!-- The Modal -->
           <div class="modal-content"> <!-- Modal content -->
@@ -92,10 +244,12 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
   <br>
   <b>Pris for hytte: kr 1200,- /døgn</b>
   <br>
-    <button class="button button4"><a href="bestilling.html">Bestill Gophitahytta</a></button>
+  <!--- § 2.2 GOPITAHYTTA BESTILLING --->
+    <button class="button button4"><a href="bestilling.html"STYLE="text-decoration: none">Bestill Gophitahytta</a></button>
+<!--- END GOPITAHYTTA BESTILLING --->
     <br>
     <br>
-
+<!--- § 2.3 GOPITHAHYTTA FASILITETER --->
                     <b>Størrelse</b>: 50 kvadratmeter <br>
                     <b>Soverom:</b> 2 <br>
                     <b>Bad:</b> 1 <br>
@@ -109,9 +263,14 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
                     <span>&#10004;</span> Boblebad <br>
                     <span>&#10004;</span> Husdyr tillatt <br>
             </div>
+            <!--- END GOPITHAHYTTA INFORMASJON --->
           </div>
           <hr>
           <br>
+
+          <!--- END GOPITAHYTTA FASILITETER --->
+
+          <!--- § 2.4 VASSFJELLHYTTA SLIDESHOW --->
           <div class="slideshow-container2">
           <div class="mySlides2 fade2">
             <div class="numbertext">1 / 3</div>
@@ -141,22 +300,29 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
           <span class="dot2" onclick="currentSlide2(3)"></span>
           </div>
 
+<!--- § 2.5 GOPITHAHYTTA JAVASCRIPT --->
           <script src="javascriptfilHytter.js"></script>
+          <!--- END GOPITHAHYTTA JAVASCRIPT --->
+  </div>
+  <!--- END GOPITHAHYTTA SLIDESHOW --->
   </div>
   </div>
-  </div>
+  <!--- END GOPITHAHYTTA MODAL --->
   </div>
 </div>
+<!--- END GOPITHAHYTTA --->
 
+<!--- § 2.6 NORAHYTTA --->
   <div class="responsive">
     <div class="img">
       <div class="desc3">Norahytta - Estenstadmarka</div>
         <img src="bilder/sjo2.jpeg" alt="Norahytta" height="250px" width=auto></a>
+        <!--- § 2.7 NORAHYTTA MODAL --->
         <button id="myBtn2">Informasjon</button> <!-- Åpner modalen -->
         <div id="myModal2" class="modal">  <!-- The Modal -->
           <div class="modal-content"> <!-- Modal content -->
             <span class="close">×</span>
-
+<!--- § 2.8 NORAHYTTA INFORMASJON --->
             <h1>  Norahytta</h1>
               <div class="kolonner2">
                 <div class="desc">
@@ -170,10 +336,12 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
   <br>
   <b>Pris for hytte: kr 1400,- /døgn</b>
   <br>
-    <button class="button button4"><a href="bestilling.html">Bestill Norahytta</a></button>
+  <!--- § 2.9 NORAHYTTA BESTILLING --->
+    <button class="button button4"><a href="bestilling.html"STYLE="text-decoration: none">Bestill Norahytta</a></button>
+<!--- END NORAHYTTA BESTILLING --->
     <br>
     <br>
-
+<!--- § 2.10 NORAHYTTA FASILITETER --->
                     <b>Størrelse</b>: 100 kvadratmeter <br>
                     <b>Soverom:</b> 3 <br>
                     <b>Bad:</b> 1 <br>
@@ -188,8 +356,11 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
                     <span>&#10008;</span> Husdyr tillatt <br>
             </div>
           </div>
+          <!--- END NORAHYTTA INFORMASJON --->
+          <!--- END NORAHYTTA FASILITETER --->
           <hr>
           <br>
+
           <div class="slideshow-container3">
           <div class="mySlides3 fade3">
             <div class="numbertext">1 / 3</div>
@@ -223,13 +394,17 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
   </div>
   </div>
   </div>
+<!--- END NORAHYTTA MODAL --->
   </div>
 </div>
+<!--- END NORAHYTTA --->
 
+<!--- § 3.0 REGINEHYTTA --->
   <div class="responsive">
     <div class="img">
       <div class="desc3">Reginehytta - Lian</div>
         <img src="bilder/sjo3.jpg" alt="Reginehytta" height="250px" width=auto></a>
+        <!--- § 3.1 REGINEHYTTA MODAL --->
         <button id="myBtn3">Informasjon</button> <!-- Åpner modalen -->
         <div id="myModal3" class="modal">  <!-- The Modal -->
           <div class="modal-content"> <!-- Modal content -->
@@ -238,6 +413,7 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
             <h1>  Reginehytta</h1>
               <div class="kolonner2">
                 <div class="desc">
+                  <!--- § 3.2 REGINEHYTTA INFORMASJON --->
                   Stort og komfortabel hytte med idyllisk beliggenhet ved sjøen i Einvika, ca 4 km vest for tettstedet Lauvsnes.
                   Pen og barnevennlig naturtomt med god plass. Lekeplass. Unike muligheter for fotture langs sjøen. Flotte sandstrender med bademuligheter.
                   Kjent som Norges største havørnområde. <br>
@@ -248,10 +424,12 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
   <br>
   <b>Pris for hytte: kr 1600,- /døgn</b>
   <br>
-    <button class="button button4"><a href="bestilling.html">Bestill Reginehytta</a></button>
+  <!--- § 3.3 REGINEHYTTA BESTILLING --->
+    <button class="button button4"><a href="bestilling.html"STYLE="text-decoration: none">Bestill Reginehytta</a></button>
+<!--- END REGINEHYTTA BESTILLING --->
     <br>
     <br>
-
+<!--- § 3.4 REGINEHYTTA FASILITETER --->
                     <b>Størrelse</b>: 150 kvadratmeter <br>
                     <b>Soverom:</b> 5 <br>
                     <b>Bad:</b> 2 <br>
@@ -264,6 +442,7 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
                     <span>&#10004;</span> TV og DVD-spiller <br>
                     <span>&#10008;</span> Boblebad <br>
                     <span>&#10004;</span> Husdyr tillatt <br>
+                    <!--- END REGINEHYTTA FASILITETER --->
             </div>
           </div>
           <hr>
@@ -302,13 +481,18 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
   </div>
   </div>
   </div>
+  <!--- END REGINEHYTTA MODAL --->
+  <!--- END REGINEHYTTA INFORMASJON --->
   </div>
 </div>
+<!--- END REGINEHYTTA --->
 
+<!--- § 3.5 VEMUNDHYTTA --->
   <div class="responsive">
     <div class="img">
       <div class="desc3">Vemundhytta - Bymarka</div>
         <img src="bilder/sjo4.jpeg" alt="Vemundhytta" height="250px" width=auto></a>
+        <!--- § 3.6 VEMUNDHYTTA MODAL --->
         <button id="myBtn4">Informasjon</button> <!-- Åpner modalen -->
         <div id="myModal4" class="modal">  <!-- The Modal -->
           <div class="modal-content"> <!-- Modal content -->
@@ -317,6 +501,7 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
             <h1>  Vemundhytta</h1>
               <div class="kolonner2">
                 <div class="desc">
+                  <!--- § 3.7 VEMUNDHYTTA INFORMASJON --->
                   Stort og komfortabel hytte med idyllisk beliggenhet ved sjøen i Einvika, ca 4 km vest for tettstedet Lauvsnes.
                   Pen og barnevennlig naturtomt med god plass. Lekeplass. Unike muligheter for fotture langs sjøen. Flotte sandstrender med bademuligheter.
                   Kjent som Norges største havørnområde. <br>
@@ -327,10 +512,12 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
   <br>
   <b>Pris for hytte: kr 2000,- /døgn</b>
   <br>
-    <button class="button button4"><a href="bestilling.html">Bestill Vemundhytta</a></button>
+  <!--- § 3.8 VEMUNDHYTTA BESTILLING --->
+    <button class="button button4"><a href="bestilling.html"STYLE="text-decoration: none">Bestill Vemundhytta</a></button>
+<!--- END VEMUNDHYTTA BESTILLING --->
     <br>
     <br>
-
+<!--- § 3.9 VEMUNDHYTTA FASILITETER --->
                     <b>Størrelse</b>: 252 kvadratmeter <br>
                     <b>Soverom:</b> 7 <br>
                     <b>Bad:</b> 2 <br>
@@ -343,8 +530,10 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
                     <span>&#10004;</span> TV og DVD-spiller <br>
                     <span>&#10004;</span> Boblebad <br>
                     <span>&#10004;</span> Husdyr tillatt <br>
+                    <!--- END VEMUNDHYTTA FASILITETER --->
             </div>
           </div>
+          <!--- END VEMUNDHYTTA INFORMASJON --->
           <hr>
           <br>
           <div class="slideshow-container5">
@@ -383,18 +572,23 @@ Her ligger selve headerlogoen vår, med link tilbake til forsiden vår (hyperlin
   </div>
   </div>
   </div>
+  <!--- END VEMUNDHYTTA MODAL --->
   </div>
 </div>
+<!--- END VEMUNDHYTTA --->
   <div class="clearfix"></div>
 
-<!--</th>
-</tr>-->
 
 </div>
+<!--- END ALTUNDER --->
+<!--- § 3.10 VEMUNDHYTTA JAVASCRIPT --->
 <script src="javascriptfil.js"></script>
+<!--- END VEMUNDHYTTA JAVASCRIPT --->
 
 </body>
+<!--- END BODY --->
 
+<!--- § 4.0 FOOTER --->
 <footer>Copyright © Drømmehytta <br>
 Har du spørsmål? ✉ Send oss en <a href="mailto:regine_bk@example.com">epost!</a>
 <div id="share-buttons">
@@ -422,4 +616,6 @@ Har du spørsmål? ✉ Send oss en <a href="mailto:regine_bk@example.com">epost!
   </a>
 
 </footer>
+<!--- END FOOTER --->
 </html>
+<!--- END HTML/LANGUAGE --->
