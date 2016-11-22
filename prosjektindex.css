@@ -1,7 +1,7 @@
-/*Alle kolonner er forskjellige, og brukes for å dele opp siden*/
+/*Alle .kolonner er forskjellige, og brukes for å dele opp siden*/
 .kolonner{
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
- column-count: 2;
+-webkit-column-count: 2; /* Chrome, Safari, Opera */
+column-count: 2;
 width: auto;
 margin: auto;
 width: 100%;
@@ -28,7 +28,7 @@ background-image: image(bilder/regler.jpeg);
 padding-top: 50px;
 }
 
-/*Alt mellom header og footer*/
+/*Alt mellom header og footer(for ikke å ødelegge størrelsene på header og footer)*/
 .altunder{
   font-family: Calibri, sans-serif;
   margin-left: 90px;
@@ -70,7 +70,7 @@ h2 {
     color: #0000FF;
     padding: 10px 20px;
 }
-/*Menyen*/
+/*Menyen øverst på siden, ul, li, lia*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -129,6 +129,7 @@ li.dropdown {
     display: block;
     background-color: white;
 }
+/*END MENYEN*/
 
 /* Bildeslide på index */
 .slideshow-container {
@@ -205,7 +206,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color:#206020;
 }
-
+/*bestillingsskjemaet og kontaktskjemaet*/
 #bestillingsskjema {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -258,7 +259,8 @@ div.desc {
     width: 24.99999%;
     margin:auto;
 }
-
+/* @media hjelper å skalere siden i rett format
+("responsive" tilhører modelen)*/
 @media only screen and (max-width: 700px){
     .responsive {
         width: 49.99999%;
@@ -315,6 +317,7 @@ div.desc {
     display: table;
     clear: both;
 }
+/*END @media modalene*/
 
 /* Bestillingsknapper*/
 .button {
@@ -380,7 +383,7 @@ table {
     column-count: 3;
     column-width: 300px;
   }
-
+/*Skaleringen blir passende*/
 @media only screen and (max-width: 1920px){
   .ansatte, .tidtabell {
     width: 100%;
@@ -405,7 +408,7 @@ div.desc3 {
     font-size: 20px;
     text-align: center;
 }
-
+/*Kanten rundt "vask" og "medlem" på bestillingssiden*/
 fieldset {
   border-color: white;
 }
@@ -530,7 +533,7 @@ font-size: 15px;
   top: 0;
 }
 
-/* Dottene */
+/* Dottene under bildene på slideshowene inni modalen */
 .dot2, .dot3, .dot4, .dot5 {
   cursor:pointer;
   height: 13px;
@@ -546,14 +549,14 @@ font-size: 15px;
   background-color: #717171;
 }
 
-/* Fading animation */
+/* Fader animasjonen */
 .fade2, .fade3, .fade4, .fade5 {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
+/*knappene i footeren, twitter, facebook, epost og google+*/
 #share-buttons img {
 width: 35px;
 padding: 5px;
@@ -573,7 +576,7 @@ display: inline;
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
+/* På mindre skjermer, forminsker tekststørrelsen */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
@@ -583,26 +586,22 @@ display: inline;
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
-  /* Styles */
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen
 and (min-width : 321px) {
-  /* Styles */
 }
 
 /* Smartphones (portrait) ----------- */
 @media only screen
 and (max-width : 320px) {
-  /* Styles */
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
-  /* Styles */
 }
 
 /* iPads (landscape) ----------- */
@@ -610,7 +609,6 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape) {
-  /* Styles */
 }
 
 /* iPads (portrait) ----------- */
@@ -618,40 +616,34 @@ and (orientation : landscape) {
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
-  /* Styles */
 }
 
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 1224px) {
-  /* Styles */
 }
 
 /* Large screens ----------- */
 @media only screen
 and (min-width : 1824px) {
-  /* Styles */
 }
 
 /* iPhone 4 - 5s ----------- */
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
-  /* Styles */
 }
 
 /* iPhone 6 ----------- */
 @media
 only screen and (max-device-width: 667px)
 only screen and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
 }
 
 /* iPhone 6+ ----------- */
 @media
 only screen and (min-device-width : 414px)
 only screen and (-webkit-device-pixel-ratio: 3) {
-  /*** You've spent way too much on a phone ***/
 }
 
 /* Samsung Galaxy S7 ----------- */

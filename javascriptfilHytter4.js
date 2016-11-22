@@ -1,3 +1,4 @@
+//Se forklaring på "javascriptfilHytter.js"
 var slideIndex5 = 1;
 showSlides5(slideIndex5);
 

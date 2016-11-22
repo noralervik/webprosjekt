@@ -1,3 +1,6 @@
+//Her lages slidshowet som er inni hver modal for hyttene.
+//Her har vi også valgt å bruke løkker for å kjøre bildeshowet. Her har vi i tillegg valgt å lage next og previous-knapper,
+//slik at brukeren kan velge å se på hvilket bilde han/hun ønsker så lenge hun/han ønker. 
 var slideIndex2 = 1;
 showSlides2(slideIndex2);
 
