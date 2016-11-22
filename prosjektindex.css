@@ -98,12 +98,11 @@ li a, .dropbtn {
 }
 
 li a:hover:not(.active) {
-background-color: rgba(0, 153, 51,0.5)
+background-color: rgba(0, 153, 51,0.5);
 }
 
 .active {
-background-color: rgba(0, 153, 51,0.5)
-
+background-color: rgba(0, 153, 51,0.5);
 }
 
 li.dropdown {
