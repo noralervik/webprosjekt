@@ -558,12 +558,12 @@ display: inline;
 }
 
 
-@-webkit-keyframes fade2 {
+@-webkit-keyframes fade2, fade3, fade4, fade5 {
   from {opacity: .4}
   to {opacity: 1}
 }
 
-@keyframes fade2 {
+@keyframes fade2, fade3, fade4, fade5 {
   from {opacity: .4}
   to {opacity: 1}
 }
@@ -572,9 +572,6 @@ display: inline;
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-
-
-
 
 /* test i forhold til skjermer*/
 /* Smartphones (portrait and landscape) ----------- */
