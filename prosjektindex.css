@@ -389,16 +389,14 @@ div.img2 img {
 
 div.desc2 {
   padding: 5px;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 
 div.desc3 {
-  padding: 25px;
-    font-size: 26px;
-    padding: 5px;
+  padding: 5px;
+    font-size: 20px;
     text-align: center;
-    margin: auto;
 }
 
 fieldset {
