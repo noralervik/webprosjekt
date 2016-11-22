@@ -119,13 +119,13 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
 <div class="altunder">
 <!--- § 1.10 BESTILLINGSSKJEMA - FORM --->
 <div class="kolonner2">
-<form action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php" id="hyttene" onsubmit="return false;">
   <!-- <fieldset> -->
   <h1>Bestill hytteopphold</h1>
   <p>Skriv inn informasjon blablablabla</p>
   <p> * Må fylles ut </p>
   <!--- § 2.0 BESTILLINGSSKJEMA --->
-  <div id="skjema">
+  <div id="bestillingsskjema">
+  <form action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php" id="hyttene" >
       <label for="fname">Fornavn *</label>
       <input type="text" id="fname" name="firstname" required = "" onchange="calculateTotal()">
   <br>
@@ -140,7 +140,7 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
   </div>
 <!--- § 2.1 HYTTETYPER --->
     <label >Hyttetyper</label> <br>
-    <select id="hytteTypes" name="hytteTypes" onchange="calculateTotal()">
+    <select id="hytteTypes" name="hytteTypes" onchange="calculateTotal()" required = "" >
     <option value="None">Velg hytte</option>
     <option value="None">--------Sjøhyttene--------</option>
     <option value="Sjøhytte1">Gopithahytta - 1200 kr</option>
