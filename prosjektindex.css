@@ -24,7 +24,6 @@ margin: auto;
 width: 100%;
 font-family: Calibri, Sans-Serif;
 background-image: image(bilder/regler.jpeg);
-line-height: 22px;
 padding-top: 50px;
 }
 
@@ -35,6 +34,7 @@ padding-top: 50px;
   margin-right: 90px;
   margin-bottom: 40px;
   padding-top: 30px;
+  line-height: 22px;
 }
 
 .midtstilt {
@@ -338,7 +338,7 @@ div.desc {
 
 /* Bestillingsknapper*/
 .button {
-    background-color: lightgrey;
+    background-color: green;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -352,7 +352,7 @@ div.desc {
 }
 
 .button:hover {
-    background-color: white;
+    background-color: #45a049;
     color: white;
   }
 
@@ -385,7 +385,8 @@ div.img2 img {
 
 div.desc2 {
   padding: 5px;
-    font-size: 16px;
+    font-size: 20px;
+    text-align: center;
 }
 
 div.desc3 {
