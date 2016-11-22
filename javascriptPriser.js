@@ -1,15 +1,10 @@
-//Set up an associative array
-//The keys represent the size of the cake
-//The values represent the cost of the cake i.e A 10" cake cost's $35
+//Har valgt å bruke taball her for å velge mellom Ja eller Nei på vask av hyttene.
 var vask_pris = new Array();
 vask_pris["Ja"]=400;
 vask_pris["Nei"]=0;
 
-
-//Set up an associative array
-//The keys represent the filling type
-//The value represents the cost of the filling i.e. Lemon filling is $5,Dobash filling is $9
-//We use this this array when the user selects a filling from the form
+//Her er en tabell/array som inneholder alle typer hytter med forskjellige priser. Dette er laget som ei liste i selve bestillingssiden
+//som brukeren kan velge i mellom.
 var hytteTypes= new Array();
 hytteTypes["None"]=0;
 hytteTypes["Sjøhytte1"]=1200;
@@ -26,99 +21,97 @@ hytteTypes["Skogshytte3"]=1600;
 hytteTypes["Skogshytte4"]=2000;
 
 
-
-// hentPrisVask() finds the price based on the size of the cake.
-// Here, we need to take user's the selection from radio button selection
+// hentPrisVask() finner prisen på vask av hytte ut ifra hva brukeren har huket av i radio-knappene på bestillingssiden.
 function hentPrisVask()
 {
    var prisVask=0;
-   //Get a reference to the form id="hyttene"
+   //Henter verdier fra riktig form id="hyttene".
    var theForm = document.forms["hyttene"];
-   //Get a reference to the cake the user Chooses name="vask":
+   //Henter veriden om Vask Ja eller Vask Nei fra navnet="vask" i formen "hyttene".
    var vask = theForm.elements["vask"];
-   //Here since there are 4 radio buttons vask.length = 4
-   //We loop through each radio buttons
+   //Siden vi valgte å sette Ja/Nei i en array har vi verdiene 0 og 1 på radio-knappene: vask.length = 2.
+   //Vi kjører en loop på hver av de to radio-knappene.
    for(var i = 0; i < vask.length; i++)
    {
-       //if the radio button is checked
+       //hvis radio-knappen er huket av skjer skjer dette:
        if(vask[i].checked)
        {
-           //we set prisVask to the value of the selected radio button
-           //i.e. if the user choose the 8" cake we set it to 25
-           //by using the vask_pris array
-           //We get the selected Items value
-           //For example vask_pris["Round8".value]"
+           //Vi setter prisVask til verdien av den valgte radio-knappen
+           //For eksempel vask_pris["Ja".value]"
            prisVask = vask_pris[vask[i].value];
-           //If we get a match then we break out of this loop
-           //No reason to continue if we get a match
+           //Hvis dette stemmer stopper vi loopen.
            break;
        }
    }
-   //We return the prisVask
+   //Til slutt retunerer vi prisVask
    return prisVask;
 }
 
 function hentEvtMedlem()
 {
-
+   // Vi setter medlemPris til 1, for hvis bruker velger "Nei, ikke medlem", vil totalprisen i calculateTotal() bli ganget med 1.
+   //Henter verdien fra radio-knappene med navn "medlem" i fra bestillingssiden.
    var medlemPris=1;
    var radios = document.getElementsByName('medlem');
+   //Hvis Ja, i dette tilfellet 1, er valgt vil dette if-setningen kjører. (Nei = 0)
    if(radios[1].checked) {
+     //Vi setter medlemPris lik 0.85 slik at hvis kunden er medlem av Turistforeningen vil 15 % bli trekt i fra.
+     //Da vil totalprisen ganges med 0,85.
      medlemPris = 0.85;
    }
    return medlemPris;
 }
-//This function finds the filling price based on the
-//drop down selection
+//Henter hytten kunder har valgt. Samme kode/framgangsmpåte som for hentPrisVask().
 function hentHyttePris()
 {
    var hytteValgtPris=0;
-   //Get a reference to the form id="hyttene"
    var theForm = document.forms["hyttene"];
-   //Get a reference to the select id="filling"
-    var valgtHytte = theForm.elements["hytteTypes"];
-   //set cakeFilling Price equal to value user chose
-   //For example hytteTypes["Lemon".value] would be equal to 5
+   var valgtHytte = theForm.elements["hytteTypes"];
    hytteValgtPris = hytteTypes[valgtHytte.value];
-   //finally we return hytteValgtPris
    return hytteValgtPris;
 }
-
+//Her kalkuleres antall dager.
 function calculateDays()
  {
+   //Vi bruker innebygde funksjoner i Atom for å finne dagens dato.
    var today = new Date();
    var dd = today.getDate();
    var mm = today.getMonth()+1; //Januar er 0!
    var yyyy = today.getFullYear();
 
-   var divobj2 = document.getElementById('antall_dager');
+   //Her henter vi verdier fra kalenderen ved hjel av id = antall_dager.
    var ankomst = new Date(document.getElementById('ankomst').value);
    var avreise = new Date(document.getElementById('avreise').value);
-   var antall_Dager = (avreise.getTime() - ankomst.getTime())/86400000; //må gange med dager, timer, minutter, sekunder, og millisekunder
-
+   //Får ut antall dager ved å ta avreise - ankomst. I tillegg for å få ut dagene i riktig format
+   //må vi gange med dager, timer, minutter, sekunder, og millisekunder.
+   var antall_Dager = (avreise.getTime() - ankomst.getTime())/86400000;
+   // Her skrives det ut en egen tekstboks for antall dager, slik at brukeren får se det etter at ankomst- og avreisedato er valgt.
+   var divobj2 = document.getElementById('antall_dager');
    divobj2.innerHTML = "Antall dager: " + antall_Dager + " dag/dager.";
 
+   //Hvis ankomstdatoen er større enn avreisedatoen vil en boks komme opp der det står at avreisedato ikke kan gå bak i tid.
    if (ankomst.getTime() > avreise.getTime()) {
      alert("Du kan ikke velge en avreisedato bak i tid.");
      divobj2.style.display = 'none';
    }
+   //Hvis ankomst er mindre enn dagens dato, vil det også komme opp en boks hvor det står at datoen må være seinere enn dagens dato.
    if (ankomst.getTime() < today.getTime()){
      alert("Du kan ikke velge datoer lengere bak enn dagens dato.");
      divobj2.style.display = 'none';
    }
+   //hvis ankomst er mindre enn avreise vil ikke NaN-verdien vises i tekstboksen.
    if (ankomst.getTime() < avreise.getTime()) {
      divobj2.style.display = 'block';
    }
 }
+//Her regnes totalprisen ut
 function calculateTotal()
 {
-   //Here we get the total price by calling our function
-   //Each function returns a number so by calling them we add the values they return together
-
+   //Lager en variabel som regner ut totalprisen. Legger sammen hentHyttePris()-funksjonen og hentPrisVask()-funksjonen.
    var totalPris = hentHyttePris() + hentPrisVask();
-   //Viser resultet
+   //Her ganger vi totalprisen igjen med medlemsprosenten.
    totalPris = totalPris * hentEvtMedlem();
-
+   //Lager egent tekstboks som skriver ut fra id="totalPris".
    var divobj = document.getElementById('totalPris');
    divobj.style.display='block';
    divobj.innerHTML = "Prisen for hytten deres er: " + totalPris + " kroner per natt.";
@@ -131,7 +124,7 @@ function calculateTotal()
    Derfor valgte vi å gi kunden en pris per natt, og antall dager i et setning under.
    */
 }
-
+ //Her sjules tekstboksene før brukeren skriver inn / velger alternativene. 
 function hideTotal()
 {
    divobj2.style.display='none';
