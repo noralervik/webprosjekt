@@ -339,8 +339,6 @@ div.desc {
     color: white;
   }
 
-
-
   /*Hyttebestillingsknapper*/
   .bestillingBtn {
     background-color: #45a049;
@@ -354,8 +352,6 @@ div.desc {
     margin: 4px 4px;
     cursor: pointer;
     border-radius: 12px;
-
-
   }
 
   /*Hva som skjer når man har pekeren over knappen*/
@@ -363,12 +359,6 @@ div.desc {
       background-color: green;
       color: white;
     }
-
-
-
-
-
-
 
 /*omoss siden*/
 /*Tabellutforming*/

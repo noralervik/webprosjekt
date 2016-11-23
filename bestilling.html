@@ -58,7 +58,10 @@ Totalprisen er det samlede beløpet for oppholdet. Denner oppdateres i sanntid e
 § 2.5 - JAVASCRIPT
 Javascriptet er filen som genererer prisen og gjør at prisene blir oppdaterte i sanntid i forhold til brukerens valg. Denne er linket til sin egne javascriptfil (javascriptPriser.js)
 
-§ 2.6 - FOOTER
+§ 2.6 - jQuery
+Har brukt jQuery for å lage en ekstra effekt på bildene (gjennomsiktighet).
+
+§ 2.7 - FOOTER
 Footeren vår består av copyrighten vår til siden og en kontaktlink som fører til e-post dersom besøkende skulle ønske å ta kontakt med oss.
 Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært linket til våre sosiale medier (Facebook, Twitter osv).
 
@@ -202,14 +205,12 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
 <!--- END JAVASCRIPT --->
   <textarea>Eventuelle kommentarer...</textarea>
 
-      <input type="submit" value="Send inn" >
+      <input type="submit" value="Send inn">
       <br><br><br><br>
       <!--- END BESTILLINGSSKJEMA --->
       </form>
-
-<div class="midtstilt">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src = "javascriptjquery.js"></script>
+<!-- § 2.6 jQuery --->
+<div class="bildeogvaer">
       <img class="midtstilt" src="bilder/fjell3.JPEG" width="250px">
       <img class="midtstilt" src="bilder/fjellutsikt.JPEG" width="250px"><br>
       <img class="midtstilt" src="bilder/sjo3.JPG" width="250px">
@@ -221,15 +222,16 @@ Det er også lagt inn sharebuttons nederst på siden hvor disse ville vært link
       <img class="midtstilt" src="bilder/sjoutsikt.JPEG" width="250px"><br>
       <img class="midtstilt" src="bilder/sjo1.JPEG" width="250px">
       <img class="midtstilt" src="bilder/fjell4.JPEG" width="250px">
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src = "javascriptjquery.js"></script>
+      <!-- END jQuery -->
+      <!-- Værvarsel-->
 <br><br>
       <script src="http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Trondheim/ekstern_boks_tre_dager.js">
       </script><noscript><a href="http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Trondheim/">yr.no: Værvarsel for Trondheim</a></noscript>
     </div>
-</div>
-
+    <!-- END Værvarsel-->
 <!--- END BESTILLINGSSKJEMA - FORM --->
-
 </div>
 
   </div>
